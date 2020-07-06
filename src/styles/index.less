@@ -1,0 +1,33 @@
+.main-news {
+
+    .article-card-main {
+        width: 75%;
+    }
+}
+
+.article-card-main {
+    position: relative;
+
+    img {
+        display: block;
+        width: 100%;
+
+        &::before {
+            content: attr(title);
+        }
+    }
+}
+
+.article-card-main__text {
+    bottom: 24px;
+    left: 24px;
+    position: absolute;
+    width: calc(100% - 48px);
+}
+
+.article-card-main__headline {
+    color: #FFF;
+    font-size: 2.0625rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
