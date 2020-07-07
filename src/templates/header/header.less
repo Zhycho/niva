@@ -1,5 +1,12 @@
 @import '../../styles/_variables.less';
 
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
 .header-top {
     background-color: @green;
 }
@@ -118,7 +125,9 @@
 }
 
 .header-bottom {
+    background-color: #FFF;
     box-shadow: 0px 3px 6px #00000029;
+    margin-bottom: 28px;
 }
 
 .header-bottom-two-half {
@@ -165,7 +174,7 @@
         margin: 0 10px;
 
         span {
-            color: @green;
+            color: @l-green;
             font-weight: 700;
         }
     }

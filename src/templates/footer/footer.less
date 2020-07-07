@@ -1,0 +1,30 @@
+@import '../../styles/_variables.less';
+
+footer {
+    background-color: #343434;
+}
+
+.footer-nav {
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer-nav__item {
+
+    a {
+        color: #FFF;
+        display: inline-block;
+        font-size: 0.6875rem;
+        padding: 12px 0;
+        text-transform: uppercase;
+        .trans();
+
+        &:hover {
+            color: @l-green;
+        }
+    }
+}
+

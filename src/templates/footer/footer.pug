@@ -1,0 +1,23 @@
+include ../../mixins/mixins.pug
+
+mixin footer-nav__item(title='Пункт меню')
+    li.footer-nav__item
+        a&attributes(attributes)= title
+
+.footer-part
+    .container
+.footer-part
+    .container
+        nav.footer-nav
+            ul
+                +footer-nav__item('Новости')(href='news.html')
+                +footer-nav__item('Архив')(href='archive.html')
+                +footer-nav__item('Статьи')(href='news.html')
+                +footer-nav__item('Губерния')(href='typical.html')
+                +footer-nav__item('Впн-2020')(href='news.html')
+                +footer-nav__item('Рекламодателю')(href='contacts.html')
+.footer-part
+    .container
+    
+.footer-part
+    .container
