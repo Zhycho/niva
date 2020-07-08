@@ -45,78 +45,15 @@ html(lang="ru")
                                 .block-headline__icon(role="presentation")
                                     <svg xmlns="http://www.w3.org/2000/svg" width="15.429" height="13.5" viewBox="0 0 15.429 13.5"><path d="M17.033,4.82l0,0V16.39l0,0H3.537l0,0V4.822l0,0Zm0-.964H3.535a.967.967,0,0,0-.964.964V16.392a.967.967,0,0,0,.964.964h13.5A.967.967,0,0,0,18,16.392V4.82a.967.967,0,0,0-.964-.964ZM15.106,7.231A1.446,1.446,0,1,1,13.66,5.785a1.446,1.446,0,0,1,1.446,1.446Zm.964,8.2H4.5V13.5L7.874,7.713l3.857,4.821H12.7l3.375-2.893Z" transform="translate(-2.571 -3.856)"/></svg>
                                 h2.block-headline__text Кадры недели
-                            .main-slider.js--main-slider
-                                div
-                                    .main-slider__item
-                                        .main-slider__img
-                                            img(src="assets/img/frames-of-week_01.png", alt="")
-                                            .article-card-tags
-                                                span.article-card-tags__alt Нива 
-                                                | | 
-                                                span.article-card-tags__title фото
-                                        .main-slider__right
-                                            .main-slider__img
-                                                img(src="assets/img/frames-of-week_02.png", alt="")
-                                                .article-card-tags
-                                                    span.article-card-tags__alt Нива 
-                                                    | | 
-                                                    span.article-card-tags__title фото
-                                            .main-slider__img
-                                                img(src="assets/img/frames-of-week_03.png", alt="")
-                                                .article-card-tags
-                                                    span.article-card-tags__alt Нива 
-                                                    | | 
-                                                    span.article-card-tags__title фото
-                                div
-                                    .main-slider__item
-                                        .main-slider__img
-                                            img(src="assets/img/frames-of-week_01.png", alt="")
-                                            .article-card-tags
-                                                span.article-card-tags__alt Нива 
-                                                | | 
-                                                span.article-card-tags__title фото
-                                        .main-slider__right
-                                            .main-slider__img
-                                                img(src="assets/img/frames-of-week_02.png", alt="")
-                                                .article-card-tags
-                                                    span.article-card-tags__alt Нива 
-                                                    | | 
-                                                    span.article-card-tags__title фото
-                                            .main-slider__img
-                                                img(src="assets/img/frames-of-week_03.png", alt="")
-                                                .article-card-tags
-                                                    span.article-card-tags__alt Нива 
-                                                    | | 
-                                                    span.article-card-tags__title фото
-                                div
-                                    .main-slider__item
-                                        .main-slider__img
-                                            img(src="assets/img/frames-of-week_01.png", alt="")
-                                            .article-card-tags
-                                                span.article-card-tags__alt Нива 
-                                                | | 
-                                                span.article-card-tags__title фото
-                                        .main-slider__right
-                                            .main-slider__img
-                                                img(src="assets/img/frames-of-week_02.png", alt="")
-                                                .article-card-tags
-                                                    span.article-card-tags__alt Нива 
-                                                    | | 
-                                                    span.article-card-tags__title фото
-                                            .main-slider__img
-                                                img(src="assets/img/frames-of-week_03.png", alt="")
-                                                .article-card-tags
-                                                    span.article-card-tags__alt Нива 
-                                                    | | 
-                                                    span.article-card-tags__title фото
-                            .main-slider-description
-                                div
-                                    h3.main-slider-description__title Открытие фонтана на эспланаде 2020 в 22:00
-                                    .article-card-info.article-card-info_black
-                                        time Вчера в 13:21
-                                        span
-                                            <svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="12.559" height="8.372" viewBox="0 0 12.559 8.372"><path d="M12.483,8.368A6.993,6.993,0,0,0,6.279,4.5a6.994,6.994,0,0,0-6.2,3.868A.705.705,0,0,0,.076,9a6.993,6.993,0,0,0,6.2,3.868A6.994,6.994,0,0,0,12.483,9,.705.705,0,0,0,12.483,8.368Zm-6.2,3.458a3.14,3.14,0,1,1,3.14-3.14A3.14,3.14,0,0,1,6.279,11.826Zm0-5.233a2.078,2.078,0,0,0-.552.083A1.043,1.043,0,0,1,4.269,8.134a2.088,2.088,0,1,0,2.01-1.541Z" transform="translate(0 -4.5)"/></svg>
-                                            | 457
+                            .main-slider-wrapper
+                                .main-slider.js--main-slider
+                                    // У каждого слайда должна быть своя fancybox-галлерея, а не одна единая для всех, как сейчас. Картинки тут можно наверное не кропать, потому что я задал определённую высоту и картинки кропаются css-ом под определённые размеры, зато в fancybox будут раскрываться в оригинале  
+                                    div
+                                        +main-slider__item
+                                    div
+                                        +main-slider__item
+                                    div
+                                        +main-slider__item
                                 .main-slider-nav
                                     button.main-slider-nav__prev.js--main-slider__prev(aria-label="Предыдущий слайдер")
                                         <svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="12.125" height="10.538" viewBox="0 0 12.125 10.538">
@@ -146,7 +83,11 @@ html(lang="ru")
                                     p Все самые близкие люди – родители, родственники, лучшие подруги – живут не в Перми, а в Пермском районе. Здесь спокойнее и уютнее, ближе к природе и земле. Пермский район также ассоциируется у меня с детством. С первого по одиннадцатый класс я училась в Кондратовской школе, участвовала во внеучебной деятельности вместе с детско-юношеским центром «Импульс», другими словами – жила очень активной и творческой жизнью. Благодаря тем возможностям, которые мне предоставила система образования района, я достигла успехов, которыми горжусь: поездка в международный детский центр «Артек», победа на региональном этапе Всероссийской олимпиады школьников по литературе, аттестат об окончании школы с отличием. Пермский район останется в моем сердце навсегда!
                     aside
                         article.commercial
-                            img(src="assets/img/commercial.jpg", alt="")
+                            // Для мобилок-планшетов этот блок будет по высоте таким же, как маленькая реклама, поэтому нужно будет подготовить другую картинку
+                            <picture>
+                                <source srcset="assets/img/commercial-small.jpg" media="(max-width: 992px)">
+                                <img src="assets/img/commercial.jpg" alt="">
+                            </picture>
                             span.commercial__label Реклама
                             span.commercial__mark Нива
                             h3.commercial__headline Эффективная реклама в нашей газете
@@ -166,6 +107,31 @@ html(lang="ru")
                         .block-headline__icon(role="presentation")
                             <svg xmlns="http://www.w3.org/2000/svg" width="18.82" height="16.61" viewBox="0 0 18.82 16.61"><defs><style>.a{fill:#cbcbcb;}</style></defs><g transform="translate(-160.834 -908.119)"><g transform="translate(160.834 908.119)"><path class="a" d="M160.834,921.271a1.9,1.9,0,0,1,1.118-1.355,11.074,11.074,0,0,1,1.143-.343c.1-.029.1.044.112.117.039.353.052.708.1,1.061a8.96,8.96,0,0,0,.741,2.515c.053.117.1.236.162.351.037.074.04.134-.057.149a8.994,8.994,0,0,1-1.317.244,1.87,1.87,0,0,1-1.836-1.4c-.057-.213-.11-.428-.165-.641Z" transform="translate(-160.834 -913.084)"/><path class="a" d="M177.21,919.623c.008.523.008.525-.412.4a23.217,23.217,0,0,0-4.222-.817,25.094,25.094,0,0,0-3.385-.093,13.955,13.955,0,0,0-1.83.17.292.292,0,0,1-.36-.19,8.909,8.909,0,0,1-.893-2.794,10.444,10.444,0,0,1-.088-1.138.218.218,0,0,1,.168-.242,22.569,22.569,0,0,0,5.738-3.091,20.429,20.429,0,0,0,2.542-2.183c.153-.159.159-.159.259.044a23.693,23.693,0,0,1,2.385,8.455C177.158,918.665,177.176,919.187,177.21,919.623Z" transform="translate(-163.084 -908.732)"/><path class="a" d="M171.407,927.179a9.093,9.093,0,0,1,1.711.135c.173.029.218.117.224.273a2.466,2.466,0,0,1-.138.868,4.409,4.409,0,0,0-.274,1.347,4.69,4.69,0,0,0,.45,1.9.735.735,0,0,1-.237.947,1.8,1.8,0,0,1-1.344.327,1.136,1.136,0,0,1-.66-.443,4.841,4.841,0,0,1-.984-1.937,10.629,10.629,0,0,1-.278-1.219,2.291,2.291,0,0,0-.806-1.242c-.076-.071-.16-.136-.229-.213-.179-.2-.148-.338.1-.43a4.329,4.329,0,0,1,.9-.2A9.1,9.1,0,0,1,171.407,927.179Z" transform="translate(-164.258 -916.384)"/><path class="a" d="M184.584,920.006c-.223,0-.309-.085-.316-.308a27.49,27.49,0,0,0-2.39-10.45c-.109-.241-.228-.477-.343-.714-.035-.073-.077-.144-.015-.223a.583.583,0,0,1,.479-.193.329.329,0,0,1,.308.225,37.058,37.058,0,0,1,1.582,4.067,24.783,24.783,0,0,1,.981,4.565,23.18,23.18,0,0,1,.2,2.4.307.307,0,0,0,0,.092C185.187,919.792,184.927,920,184.584,920.006Z" transform="translate(-169.792 -908.119)"/><path class="a" d="M191.343,914.761a6.274,6.274,0,0,1-.749,3.061c-.078.148-.153.2-.311.105a3.733,3.733,0,0,0-.494-.247c-.137-.057-.157-.119-.083-.249a5.072,5.072,0,0,0,.627-1.853,5.215,5.215,0,0,0-1.1-4.039,4.921,4.921,0,0,0-1.325-1.185c-.142-.087-.149-.162-.066-.292.1-.161.187-.332.273-.5.062-.122.129-.133.246-.06a6.207,6.207,0,0,1,2.132,2.175A6.008,6.008,0,0,1,191.343,914.761Z" transform="translate(-172.525 -908.698)"/><path class="a" d="M188.116,915.979a3.7,3.7,0,0,0-1.558-3.058c-.159-.118-.186-.207-.078-.368a4.144,4.144,0,0,0,.259-.467c.057-.113.119-.138.229-.062a4.7,4.7,0,0,1,2.081,3.427,4.631,4.631,0,0,1-.505,2.707c-.115.227-.119.226-.344.116-.16-.079-.315-.167-.478-.238-.13-.056-.142-.123-.075-.241a3.8,3.8,0,0,0,.438-1.3C188.113,916.325,188.1,916.153,188.116,915.979Z" transform="translate(-171.929 -909.794)"/></g></g></svg>
                         h2.block-headline__text Афиша
+                    .affiche.js--affiche
+                        ul.affiche-tabs(role="tablist")
+                            +affiche-tabs__item('24', 'Июля', 'Владимир Путин назначил дату парада в честь юбилея Победы', 'active')(datetime="2020-07-24")
+                            +affiche-tabs__item('30', 'Сентября', 'Разблокирован телеграм')(datetime="2020-09-30")
+                            +affiche-tabs__item('12', 'Октября', 'Найден брат коронавируса')(datetime="2020-10-12")
+                            +affiche-tabs__item('1', 'Января', 'Новый год!')(datetime="2020-01-01")
+                            +affiche-tabs__item('2', 'Января', 'Газета Нива запустила новый сайт')(datetime="2020-01-02")
+                            +affiche-tabs__item('5', 'Августа')(datetime="2020-08-05")
+                            +affiche-tabs__item('5', 'Августа')(datetime="2020-08-05")
+                            +affiche-tabs__item('5', 'Августа')(datetime="2020-08-05")
+                        ul.affiche-panels
+                            +affiche-panels__item('Владимир Путин назначил дату парада в честь юбилея Победы', 'active')
+                            +affiche-panels__item('Разблокирован телеграм')
+                            +affiche-panels__item('Найден брат коронавируса')
+                            +affiche-panels__item('Новый год!')
+                            +affiche-panels__item('Газета Нива запустила новый сайт')
+                            +affiche-panels__item()
+                            +affiche-panels__item()
+                            +affiche-panels__item()
+                    ul.affiche-mobile
+                        +affiche-mobile__item
+                        +affiche-mobile__item
+                        +affiche-mobile__item
+                        +affiche-mobile__item
+                        +affiche-mobile__item
                 article.commercial-block
                     span.commercial__label Реклама
                     img(src="assets/img/commercial-block.jpg", alt="")

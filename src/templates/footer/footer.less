@@ -2,6 +2,61 @@
 
 footer {
     background-color: #343434;
+
+    .soc-list {
+
+        li {
+
+            a {
+
+                svg {
+                    fill: #FFF;
+                }
+
+                &:hover {
+
+                    svg {
+                        fill: @l-green;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .soc-list {
+            max-width: 200px;
+            flex-wrap: wrap;
+
+            li {
+                width: calc(25% - 4px);
+
+                a {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+        .soc-list {
+            width: 100%;
+            justify-content: center;
+            margin-top: 24px;
+            max-width: none;
+
+            li {
+                width: auto;
+            }
+        }
+    }
+}
+
+.footer-part {
+
+    &:nth-of-type(n + 2) {
+        border-top: 1px solid rgba(248, 248, 248, 0.185);
+    }
 }
 
 .footer-nav {
@@ -28,3 +83,183 @@ footer {
     }
 }
 
+.footer-top {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+
+    @media (max-width: 992px) {
+        flex-wrap: wrap;
+
+        & > .footer-link-with-icon {
+            width: calc(33.33% - 30px);
+        }
+    }
+}
+
+.footer-limitation {
+    align-items: center;
+    background-color: @l-green;
+    border-radius: 50%;
+    color: #FFF;
+    display: flex;
+    font-size: 1.4375rem;
+    font-weight: 700;
+    height: 60px;
+    justify-content: center;
+    width: 60px;
+}
+
+.footer-link-with-icon {
+    text-align: end;
+
+    div {
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    svg {
+        margin-right: 8px;
+    }
+
+    a {
+        color: #FFF;
+        font-size: 1.0625rem;
+        font-weight: 700;
+        .trans();
+
+        &:hover {
+            color: @l-green;
+        }
+    }
+
+    span {
+        color: #CBCBCB;
+        font-size: 0.6875rem;
+    }
+}
+
+.footer-phones {
+
+    .footer-link-with-icon {
+        margin-bottom: 8px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    @media (max-width: 992px) {
+        width: calc(33.33% - 30px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.footer-address {
+    color: #CBCBCB;
+    font-size: 0.6875rem;
+    font-style: normal;
+    text-align: end;
+
+    span {
+        display: block;
+        margin-bottom: 8px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    @media (max-width: 992px) {
+        width: 33.33%;
+    }
+}
+
+.footer-description {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+
+    p {
+        color: #FFF;
+        font-size: 0.6875rem;
+        font-weight: 500;
+        margin-right: 16px;
+        max-width: 850px;
+    }
+}
+
+.footer-description-link {
+    align-items: center;
+    display: flex;
+
+    img {
+        display: block;
+        margin-right: 16px;
+    }
+
+    a {
+        color: #FFF;
+        font-size: 0.6875rem;
+        font-weight: 500;
+        white-space: nowrap;
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.footer-bottom {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    .logo-wrapper {
+
+        .logo {
+
+            img {
+                width: 140px;
+            }
+        }
+
+        .logo-description {
+            font-size: 0.5rem;
+            font-weight: 500;
+        }
+    }
+}
+
+.footer-copy {
+    color: #FFF;
+    font-size: 0.75rem;
+}
+
+.praweb {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 37px;
+    margin-left: 68px;
+    width: 84px;
+
+    svg {
+        fill: #FFF;
+        .trans();
+        transform: scale(1.3);
+    }
+
+    &:hover {
+
+        svg {
+            fill: @l-green;
+        }
+    }
+}

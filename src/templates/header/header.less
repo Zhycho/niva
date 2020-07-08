@@ -16,8 +16,32 @@ header {
     justify-content: space-between;
 
     & > div {
+        align-items: center;
         display: flex;
         position: relative;
+    }
+
+    @media (max-width: 992px) {
+        & > div {
+
+            &:nth-of-type(2) {
+                display: none;
+            }
+        }
+    }
+}
+
+.burger {
+    align-items: center;
+    background: transparent;
+    border: none;
+    height: 36px;
+    display: none;
+    fill: #FFF;
+    width: 36px;
+
+    @media (max-width: 992px) {
+        display: flex;
     }
 }
 
@@ -49,6 +73,7 @@ header {
 }
 
 .header-search {
+    height: 100%;
     
     &.active {
 
@@ -202,4 +227,8 @@ header {
 .header-soc__text {
     font-size: 0.6875rem;
     margin-right: 24px;
+
+    @media (max-width: 992px) {
+        display: none;
+    }
 }

@@ -8,7 +8,9 @@ mixin header-nav__item(title='Пункт меню')
     .container
         .header-top-two-half
             div
-                .logo-wrapper
+                button.burger(aria-label="Показать/скрыть мобильное меню")
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23.489" height="15.66" viewBox="0 0 23.489 15.66"><path d="M3,21.66H26.489V19.05H3Zm0-6.525H26.489v-2.61H3ZM3,6V8.61H26.489V6Z" transform="translate(-3 -6)"/></svg>
+                .logo-wrapper(role="banner")
                     a(href="index.html").logo
                         img(src="assets/img/logo-niva.png", alt="")
                     span.logo-description Еженедельная газета пермского района
@@ -21,7 +23,7 @@ mixin header-nav__item(title='Пункт меню')
                         +header-nav__item('Губерния')(href='typical.html')
                         +header-nav__item('Впн-2020')(href='news.html')
                         +header-nav__item('Рекламодателю')(href='contacts.html')
-                form(action="").header-search.js--header-search
+                form(action="" role="search").header-search.js--header-search
                     .header-search__input-wrapper
                         input.header-search__input(type="text", name="", placeholder="Я ищу...")
                     button.header-search__button.js--header-search-button(aria-label="Поиск")
