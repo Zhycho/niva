@@ -15,20 +15,6 @@ $(document).ready(function() {
         slidesToScroll: 1,
         prevArrow: $('.js--main-slider__prev'),
         nextArrow: $('.js--main-slider__next'),
-        // responsive: [
-        //     {
-        //         breakpoint: 993,
-        //         settings: {
-        //             slidesToShow: 3
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 769,
-        //         settings: {
-        //             slidesToShow: 2
-        //         }
-        //     },
-        // ]
     });
 
     // Табы в афише
@@ -44,5 +30,12 @@ $(document).ready(function() {
     $('.js--affiche-tabs__item_mobile').click( function() {
         $(this).closest('.js--affiche-mobile__item').siblings().removeClass('active');
         $(this).closest('.js--affiche-mobile__item').toggleClass('active');
+    });
+
+    // Бургерное меню
+    $('.js--burger').click( function() {
+        $(this).toggleClass('active');
+        $(this).closest('.js--header-top').find('.js--burger-menu').toggleClass('active');
+        $(this).closest('body').toggleClass('hidden');
     });
 });

@@ -1,0 +1,233 @@
+@import '_variables.less';
+
+.archive-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -14px;
+
+    .newspaper {
+        margin: 0 14px 28px;
+        width: calc(33.33% - 28px);
+    }
+
+    @media (max-width: 1200px) {
+        .newspaper {
+            width: calc(50% - 28px);
+        }
+    }
+
+    @media (max-width: 992px) {
+        .newspaper {
+            width: calc(33.33% - 28px);
+        }
+    }
+
+    @media (max-width: 768px) {
+        margin: 0 -10px;
+
+        .newspaper {
+            margin: 0 10px 20px;
+            width: calc(50% - 20px);
+        }
+    }
+
+    @media (max-width: 480px) {
+        margin: 0 -10px;
+
+        .newspaper {
+            margin: 0 10px 20px;
+            width: calc(100% - 20px);
+        }
+    }
+}
+
+.newspaper {
+    background-color: #FFF;
+    box-shadow: 0px 1px 12px #00000021;
+}
+
+.newspaper__img {
+    position: relative;
+
+    img {
+        display: block;
+        height: 325px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .affiche-tabs__date {
+        background-color: @l-green;
+        color: #FFF;
+        left: 0;
+        position: absolute;
+        top: 0;
+        min-width: 60px;
+        padding: 4px 0;
+        width: 60px;
+    }
+}
+
+.newspaper__description {
+    padding: 16px;
+}
+
+.newspaper__button {
+    margin-bottom: 12px;
+}
+
+.newspaper__detail {
+    color: #2b2b2b85;
+    display: block;
+    font-size: 0.6875rem;
+    margin-bottom: 8px;
+}
+
+.newspaper__price {
+    display: block;
+    font-size: 0.6875rem;
+}
+
+.modal {
+    display: none;
+}
+
+.fancybox-content.modal {
+    background-color: #E3E3E3;
+    border-radius: 5px;
+    max-width: 640px;
+    overflow-x: hidden;
+    padding: 50px 24px;
+    position: relative;
+    width: 100%;
+
+    .fancybox-close-small {
+        color: @l-green;
+
+        svg {
+            transform: scale(2);
+        }
+    }
+
+    &::after {
+        background: url(../img/modal-decor.png);
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 500px;
+        left: 0;
+        position: absolute;
+        width: 470px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 50px 16px;
+    }
+}
+
+.modal-container {
+    margin: 0 auto;
+    max-width: 440px;
+    position: relative;
+    z-index: 1;
+}
+
+.modal-headline {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media (max-width: 480px) {
+        font-size: 1.75rem;
+    }
+}
+
+.modal-logo {
+    display: block;
+    margin: 0 auto 16px;
+}
+
+.input {
+    display: block;
+
+    input {
+        background: #FFF;
+        border: none;
+        border-radius: 5px;
+        color: #4E4E4E;
+        display: block;
+        font-size: 0.75rem;
+        margin-bottom: 12px;
+        padding: 16px;
+        width: 100%;
+
+        &::placeholder {
+            color: #4E4E4E;
+        }
+    }
+}
+
+.input-check {
+    cursor: pointer;
+    margin: 20px 0;
+    display: block;
+    position: relative;
+
+    input {
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        width: 1px;
+
+        &:checked {
+
+            & + span {
+
+                &::after {
+                    border-color: #FFF;
+                }
+            }
+        }
+    }
+
+    span {
+        color: #4E4E4E;
+        display: inline-block;
+        font-size: 0.6875rem;
+        padding-left: 24px;
+
+        &::before {
+            background-color: #2D944B;
+            border-radius: 2px;
+            content: "";
+            display: block;
+            height: 18px;
+            left: 0;
+            position: absolute;
+            top: 2px;
+            width: 18px;
+        }
+
+        &::after {
+            content: "";
+            border-top: 2px solid transparent;
+            border-left: 2px solid transparent;
+            display: block;
+            background: transparent;
+            height: 8px;
+            width: 4px;
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            transform: rotate(-135deg);
+            .trans();
+        }
+    }
+}
+
+.button.modal-button {
+    margin: 0 auto;
+    display: block;
+}

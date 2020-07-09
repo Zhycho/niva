@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Нива</title>
+		<link rel="stylesheet" href="assets/css/mainstyle.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="assets/js/slick.min.js"></script>
+		<script src="assets/js/common.js"></script><script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="header-top js--header-top">
+				<div class="burger-menu js--burger-menu">
+					<form class="burger-menu__search" action="">
+						<button class="burger-menu__search-button" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="19.155" height="19.16" viewBox="0 0 19.155 19.16"><path d="M23.43,22.266,18.1,16.889a7.592,7.592,0,1,0-1.152,1.167L22.243,23.4a.82.82,0,0,0,1.157.03A.825.825,0,0,0,23.43,22.266ZM12.137,18.121a5.995,5.995,0,1,1,4.24-1.756A5.958,5.958,0,0,1,12.137,18.121Z" transform="translate(-4.5 -4.493)" fill="#fff"/></svg></button>
+						<input class="burger-menu__search-field" type="text" name="" placeholder="Поиск...">
+					</form>
+					<nav class="burger-menu__nav">
+						<ul>
+										<li class="burger-menu__nav-item"><a href="news.html">Новости</a></li>
+										<li class="burger-menu__nav-item"><a href="archive.html">Архив</a></li>
+										<li class="burger-menu__nav-item"><a href="news.html">Статьи</a></li>
+										<li class="burger-menu__nav-item"><a href="typical.html">Губерния</a></li>
+										<li class="burger-menu__nav-item"><a href="news.html">Впн-2020</a></li>
+										<li class="burger-menu__nav-item"><a href="contacts.html">Рекламодателю</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="container">
+					<div class="header-top-two-half">
+						<div>
+							<button class="burger js--burger" aria-label="Показать/скрыть мобильное меню"><svg xmlns="http://www.w3.org/2000/svg" width="23.489" height="15.66" viewBox="0 0 23.489 15.66"><path d="M3,21.66H26.489V19.05H3Zm0-6.525H26.489v-2.61H3ZM3,6V8.61H26.489V6Z" transform="translate(-3 -6)"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18.5" height="18.502" viewBox="0 0 18.5 18.502"><defs><style>.cross{fill:#fff;}</style></defs><g transform="translate(-329.294 -561.07)"><rect class="cross" width="3.198" height="22.966" transform="matrix(0.707, -0.707, 0.707, 0.707, 329.294, 563.331)"/><rect class="cross" width="3.198" height="22.966" transform="matrix(0.707, 0.707, -0.707, 0.707, 345.533, 561.07)"/></g></svg>
+							</button>
+							<div class="logo-wrapper" role="banner"><a class="logo" href="index.html"><img src="assets/img/logo-niva.png" alt=""></a><span class="logo-description">Еженедельная газета пермского района</span></div>
+						</div>
+						<div>
+							<nav class="header-nav">
+								<ul>
+												<li class="header-nav__item"><a href="news.html">Новости</a></li>
+												<li class="header-nav__item"><a href="archive.html">Архив</a></li>
+												<li class="header-nav__item"><a href="news.html">Статьи</a></li>
+												<li class="header-nav__item"><a href="typical.html">Губерния</a></li>
+												<li class="header-nav__item"><a href="news.html">Впн-2020</a></li>
+												<li class="header-nav__item"><a href="contacts.html">Рекламодателю</a></li>
+								</ul>
+							</nav>
+							<form class="header-search js--header-search" action="" role="search">
+								<div class="header-search__input-wrapper">
+									<input class="header-search__input" type="text" name="" placeholder="Я ищу...">
+								</div>
+								<button class="header-search__button js--header-search-button" aria-label="Поиск"><svg xmlns="http://www.w3.org/2000/svg" width="19.155" height="19.16" viewBox="0 0 19.155 19.16"><path d="M23.43,22.266,18.1,16.889a7.592,7.592,0,1,0-1.152,1.167L22.243,23.4a.82.82,0,0,0,1.157.03A.825.825,0,0,0,23.43,22.266ZM12.137,18.121a5.995,5.995,0,1,1,4.24-1.756A5.958,5.958,0,0,1,12.137,18.121Z" transform="translate(-4.5 -4.493)" fill="#fff"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21.576" viewBox="0 0 21 21.576">
+<path d="M55.593,573.046a2.09,2.09,0,0,1-.187.292q-3.669,3.807-7.343,7.609c-.387.4-.605.406-1.012.014l-1.689-1.629a.544.544,0,0,1-.013-.91l7.482-7.749c.062-.064.122-.13.195-.206-.078-.084-.143-.156-.211-.227q-3.723-3.858-7.448-7.714c-.349-.362-.347-.6.012-.944q.86-.833,1.724-1.665a.538.538,0,0,1,.906.013q3.683,3.81,7.363,7.625a3.015,3.015,0,0,1,.226.308c.128-.157.2-.258.284-.345q3.654-3.787,7.31-7.572c.339-.35.58-.357.924-.026q.862.832,1.725,1.664c.353.342.355.589.012.944l-7.468,7.729c-.062.064-.122.131-.2.212l1.467,1.52q3.081,3.19,6.162,6.379c.389.4.389.626-.011,1.014q-.842.817-1.688,1.631a.545.545,0,0,1-.909-.01q-3.682-3.812-7.361-7.625C55.776,573.3,55.719,573.21,55.593,573.046Z" transform="translate(-45.108 -559.677)" fill="#fff"/>
+</svg>
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="header-bottom">
+				<div class="container">
+					<div class="header-bottom-two-half">
+						<div>
+							<ul class="header-info">
+								<li class="header-info__item"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="9.1" height="13" viewBox="0 0 9.1 13"><defs><style>.geo{fill:#2d944b;}</style></defs><path class="geo" d="M12.05,3A4.547,4.547,0,0,0,7.5,7.55c0,3.412,4.55,8.45,4.55,8.45s4.55-5.037,4.55-8.45A4.547,4.547,0,0,0,12.05,3Zm0,6.175A1.625,1.625,0,1,1,13.675,7.55,1.626,1.626,0,0,1,12.05,9.175Z" transform="translate(-7.5 -3)"/></svg><span>Пермь</span></li>
+								<li class="header-info__item"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="26.389" height="16.581" viewBox="0 0 26.389 16.581">
+<g transform="translate(-471 -91.969)">
+<path d="M492.978,100.711a2,2,0,0,0,.116.783.31.31,0,0,1-.1.387,5.967,5.967,0,0,0-1.052,1.264c-.147.232-.159.231-.3,0a4.742,4.742,0,0,1,.325-5.4,5.046,5.046,0,0,1,6.641-1.111.238.238,0,0,1,.167.15.224.224,0,0,1-.193.144,6.989,6.989,0,0,0-1.417.928.411.411,0,0,1-.428.087,2.938,2.938,0,0,0-3.254,1.129,2.644,2.644,0,0,0-.505,1.639Zm-4.562.964a1.961,1.961,0,0,1-1.028-.334.754.754,0,0,1-.01-1.313,2.04,2.04,0,0,1,2.3.045.739.739,0,0,1,.007,1.211,1.983,1.983,0,0,1-1.269.391Zm3.528-5.625a.754.754,0,0,1-.906.773,2,2,0,0,1-1.649-1.624.775.775,0,0,1,.769-.876A1.936,1.936,0,0,1,491.944,96.05Zm4.962-2.6a1.7,1.7,0,0,1-.359,1.139.785.785,0,0,1-1.29,0,1.932,1.932,0,0,1-.048-2.184.8.8,0,0,1,1.4.019,1.651,1.651,0,0,1,.3,1.026Zm2.955,2.594a1.894,1.894,0,0,1,1.955-1.7.731.731,0,0,1,.6.8,1.682,1.682,0,0,1-.1.433.757.757,0,0,1-.852.6,4.081,4.081,0,0,0-1.233.168C499.925,96.419,499.862,96.367,499.861,96.044Zm-9.653,11a.777.777,0,0,1-.81-.924,1.994,1.994,0,0,1,1.6-1.565c.243-.039.281,0,.217.247A5.575,5.575,0,0,0,491,106.52a.342.342,0,0,1-.252.39,2.159,2.159,0,0,1-.544.13Z" transform="translate(-16 -0.033)" fill="#ffa81f" fill-rule="evenodd"/>
+<path d="M496.67,111a5.331,5.331,0,0,1-2.069-.748,4.744,4.744,0,0,1-2.3-4.121,4.908,4.908,0,0,1,4.174-4.816,5.056,5.056,0,0,1,3.384.629.877.877,0,0,0,.193.091,4.84,4.84,0,0,0-.918-.885,4.555,4.555,0,0,0-2.308-1c-.189-.018-.121-.116-.062-.208a5.757,5.757,0,0,1,1.4-1.488,6.1,6.1,0,0,1,7.457.1,5.826,5.826,0,0,1,1.928,2.74c.1.3.1.312-.216.357a3.566,3.566,0,0,0-2.533,1.639c-.021.031-.036.066-.063.116a.275.275,0,0,0,.083-.01,4.874,4.874,0,0,1,2.253-.7,4,4,0,0,1,2.665.845c1.3.952,1.378,2.89,1.185,4.352a3.332,3.332,0,0,1-3.2,3.1H496.67Z" transform="translate(-13.613 -2.45)" fill="#4496d3" fill-rule="evenodd"/>
+</g>
+</svg><span>+15 &deg;C</span>
+								</li>
+								<li class="header-info__item">
+									<ul class="header-info__currencies">
+										<li><span>&#36; </span>69,12</li>
+										<li><span>&euro; </span>78,52</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<div class="header-soc"><span class="header-soc__text">Присоединяйтесь к нам:</span>
+											<ul class="soc-list">
+												<li><a href="#" aria-label="ВКонтакте"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="21.891" height="14.125" viewBox="0 0 21.891 14.125"><path d="M1416.11,96.206c.4,0,.8.012,1.2,0a.967.967,0,0,1,.9.515q.442.687.848,1.388c.612,1.034,1.166,2.1,1.8,3.11a5.745,5.745,0,0,0,.789,1.039c.342.323.577.268.754-.179a6.155,6.155,0,0,0,.294-1.671c.059-.824.047-1.659.047-2.49a.745.745,0,0,0-.824-.886c-.141,0-.294.007-.448.006-.059,0-.141.027-.165-.042a.184.184,0,0,1,.071-.185,4.165,4.165,0,0,1,2.273-1.313,10.35,10.35,0,0,1,1.719-.052c.271-.008.542,0,.824,0a.825.825,0,0,1,.86.669,4.744,4.744,0,0,1,.153,1.521c0,1.147-.117,2.293-.023,3.44a3.554,3.554,0,0,0,.212,1,.521.521,0,0,0,.978.118,2.582,2.582,0,0,0,.318-.643,30.1,30.1,0,0,1,2.732-5.231.85.85,0,0,1,.754-.366,8.1,8.1,0,0,1,3.227.51,1.658,1.658,0,0,1,.177.088.416.416,0,0,1,.259.589,6,6,0,0,1-.683,1.531c-.659,1.189-1.472,2.273-2.214,3.4a6.148,6.148,0,0,0-.436.72.75.75,0,0,0,.224,1.178,10.867,10.867,0,0,1,1.531,1.487,12.308,12.308,0,0,1,1.378,1.785,1.511,1.511,0,0,1-.118,1.8,1.49,1.49,0,0,1-1.107.509c-.836.013-1.672,0-2.52,0a.824.824,0,0,1-.6-.235c-.235-.236-.471-.471-.695-.707a16.749,16.749,0,0,0-1.625-1.6c-.129-.1-.247-.187-.376-.278a1.117,1.117,0,0,0-1.343-.127,1.656,1.656,0,0,0-.836,1.413,3.993,3.993,0,0,1-.094.919.706.706,0,0,1-.765.611,7.381,7.381,0,0,1-2.6-.316,7.708,7.708,0,0,1-2.85-1.875,22.615,22.615,0,0,1-5.276-8.159c-.247-.646-.495-1.3-.742-1.941-.224-.6-.059-.942.542-1,.495-.042.989-.008,1.484-.008v-.046Z" transform="translate(-1413.989 -95.432)"/></svg></a></li>
+												<li><a href="#" aria-label="Одноклассники"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="8.974" height="15.125" viewBox="0 0 8.974 15.125"><path d="M1450.34,101.692v-.413c.035-.088.062-.177.1-.265a.917.917,0,0,1,.742-.557,1.038,1.038,0,0,1,.707.2c.15.095.292.208.442.3a4.818,4.818,0,0,0,3.259.624,4.29,4.29,0,0,0,2.058-.838,1.412,1.412,0,0,1,.494-.251.9.9,0,0,1,1.033.429,2.451,2.451,0,0,1,.141.353v.383a1.129,1.129,0,0,1-.344.5,5.14,5.14,0,0,1-2.579,1.247c-.247.046-.5.088-.768.131.035.039.053.062.071.082l1.537,1.55,1.139,1.158a.883.883,0,0,1,.256.905.959.959,0,0,1-1.634.451c-.671-.7-1.351-1.373-2.022-2.064-.1-.105-.159-.11-.265,0-.662.682-1.325,1.356-1.987,2.031a1.115,1.115,0,0,1-.442.3,1.037,1.037,0,0,1-1.245-.779.96.96,0,0,1,.282-.856c.875-.878,1.74-1.759,2.605-2.64a.227.227,0,0,0,.106-.14.255.255,0,0,0-.053-.018c-.115-.019-.23-.036-.344-.052a5.355,5.355,0,0,1-2.738-1.137,1.708,1.708,0,0,1-.548-.64Zm4.019-8.832h.936a.408.408,0,0,0,.053.015,3.86,3.86,0,0,1,3.206,4.613,3.807,3.807,0,1,1-4.884-4.47,4.266,4.266,0,0,1,.689-.155ZM1453,96.686a1.833,1.833,0,1,0,3.665.006,1.887,1.887,0,0,0-1.837-1.878A1.86,1.86,0,0,0,1453,96.693Z" transform="translate(-1450.34 -92.86)"/></svg></a></li>
+												<li><a href="#" aria-label="Ютуб"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="19.537" height="13.737" viewBox="0 0 19.537 13.737"><path d="M20.179,6.649a2.455,2.455,0,0,0-1.727-1.738C16.928,4.5,10.818,4.5,10.818,4.5s-6.109,0-7.633.411A2.455,2.455,0,0,0,1.458,6.649a25.752,25.752,0,0,0-.408,4.733,25.752,25.752,0,0,0,.408,4.733,2.418,2.418,0,0,0,1.727,1.711c1.524.411,7.633.411,7.633.411s6.109,0,7.633-.411a2.418,2.418,0,0,0,1.727-1.711,25.752,25.752,0,0,0,.408-4.733,25.752,25.752,0,0,0-.408-4.733ZM8.82,14.287V8.477l5.106,2.9-5.106,2.9Z" transform="translate(-1.05 -4.5)"/></svg></a></li>
+												<li><a href="#" aria-label="Инстаграм"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="14.928" height="15.125" viewBox="0 0 14.928 15.125"><path d="M1487.243,108.834h-4.5a2.868,2.868,0,0,1-2.854-2.2,3.045,3.045,0,0,1-.094-.75V96.666a2.891,2.891,0,0,1,2.481-2.929,3.02,3.02,0,0,1,.477-.027h9a2.886,2.886,0,0,1,2.886,2.271,3.183,3.183,0,0,1,.073.7q.016,4.585.01,9.169a2.917,2.917,0,0,1-2.5,2.955,3.29,3.29,0,0,1-.529.026C1490.2,108.835,1488.727,108.834,1487.243,108.834Zm-6-9.1v6.1a1.433,1.433,0,0,0,1.505,1.527h9a1.442,1.442,0,0,0,1.505-1.541V99.742H1491.1c.073.461.166.911.208,1.365a3.3,3.3,0,0,1-.166,1.382,3.944,3.944,0,0,1-.612,1.228,4.053,4.053,0,0,1-7.089-.957,4.112,4.112,0,0,1,.01-3.024h-2.211Zm8.625,1.536a2.674,2.674,0,1,0,0,.005Zm3.1-5.806h-2.512v2.541h2.512" transform="translate(-1479.789 -93.709)"/></svg></a></li>
+												<li><a href="#" aria-label="Твитер"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="17.267" height="15.125" viewBox="0 0 17.267 15.125"><path d="M1387.213,106.839a3.7,3.7,0,0,1-3.335-2.654,3.314,3.314,0,0,0,1.576-.067,3.861,3.861,0,0,1-2.828-3.8,3.518,3.518,0,0,0,1.63.472,4,4,0,0,1-1.112-5.081,9.989,9.989,0,0,0,7.338,3.982c-.022-.23-.054-.432-.065-.633a3.734,3.734,0,0,1,2.989-4.016,3.294,3.294,0,0,1,3.011,1.015.3.3,0,0,0,.334.1,6.989,6.989,0,0,0,1.867-.763c.054-.029.1-.056.183-.1a3.353,3.353,0,0,1-.594,1.17c-.27.324-.583.616-.863.908a6.654,6.654,0,0,0,1.91-.565.713.713,0,0,1-.086.157,7.41,7.41,0,0,1-1.532,1.687.294.294,0,0,0-.119.288c.119,4.111-2.137,8.633-6.216,10.4a9.7,9.7,0,0,1-4.532.755,9.533,9.533,0,0,1-4.6-1.54,2.2,2.2,0,0,1-.183-.126,6.906,6.906,0,0,0,5.223-1.586Z" transform="translate(-1381.99 -94.993)"/></svg></a></li>
+												<li><a href="#" aria-label="Ватсап"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="15.068" height="15.125" viewBox="0 0 15.068 15.125"><path d="M1364.113,102.591a7.55,7.55,0,0,1-11.249,6.57.991.991,0,0,0-.9-.092c-.616.216-1.243.415-1.859.617-.432.138-.551-.014-.4-.427.173-.519.324-1.049.519-1.557a1.285,1.285,0,0,0-.119-1.244A7.583,7.583,0,0,1,1356.744,95a7.456,7.456,0,0,1,7.37,7.587Zm-11.767-2a2.044,2.044,0,0,0,.13.808,8.5,8.5,0,0,0,6.278,5.31,2.1,2.1,0,0,0,1.988-.756.973.973,0,0,0-.313-1.637c-.173-.085-.346-.171-.508-.254-.929-.451-.951-.467-1.588.334a.756.756,0,0,1-1.08.239,5.9,5.9,0,0,1-2.561-2.269.606.606,0,0,1,.043-.851,1.156,1.156,0,0,0,.184-1.591c-.151-.275-.249-.583-.378-.864a.821.821,0,0,0-1.34-.3,2.386,2.386,0,0,0-.854,1.832Z" transform="translate(-1349.046 -95.003)"/></svg></a></li>
+												<li><a href="#" aria-label="Вайбер"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="14.236" height="15.125" viewBox="0 0 14.236 15.125"><path d="M1323.04,94a14.4,14.4,0,0,1,4.135.56,3.777,3.777,0,0,1,2.727,2.885,11.778,11.778,0,0,1-.036,5.787,3.613,3.613,0,0,1-2.664,2.723,14.559,14.559,0,0,1-4.75.544.822.822,0,0,0-.713.345q-.882,1.018-1.791,2.013a.439.439,0,0,1-.517.249.534.534,0,0,1-.151-.529c0-.663-.009-1.328,0-1.991a.587.587,0,0,0-.419-.655,4.1,4.1,0,0,1-2.7-3.5,13.015,13.015,0,0,1,.036-4.2c.374-2.346,1.613-3.543,4.063-3.994A12.238,12.238,0,0,1,1323.04,94Zm4.17,9.385a.6.6,0,0,0-.2-.467,6.461,6.461,0,0,0-1.586-1.075.69.69,0,0,0-.9.241.98.98,0,0,1-1.355.254,4.3,4.3,0,0,1-2.13-2.139.777.777,0,0,1,.25-1.149.713.713,0,0,0,.187-1.1,11.311,11.311,0,0,0-.731-1.026c-.508-.6-.748-.654-1.239-.344-.864.552-1.132,1.046-.873,1.724a10.586,10.586,0,0,0,6.763,6.416,1.666,1.666,0,0,0,1.809-1.334Zm-3.8-7.459c-.143.047-.428-.113-.428.167-.009.209.268.131.419.165.125.029.258.037.383.062a3.837,3.837,0,0,1,3.359,3.653c.018.1.036.193.053.287.036.11.062.249.2.223a.2.2,0,0,0,.125-.235,4.251,4.251,0,0,0-.027-.585,4.341,4.341,0,0,0-4.09-3.737Zm.232,1.131c-.08.005-.294-.081-.321.118s.187.188.33.216c.125.026.258.038.383.07a2.45,2.45,0,0,1,1.969,2.228c.027.174-.036.471.231.429.241-.037.169-.31.152-.495a2.876,2.876,0,0,0-2.745-2.565Z" transform="translate(-1316.009 -93.995)"/></svg></a></li>
+												<li><a href="#" aria-label="Телеграм"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="16.142" height="14.125" viewBox="0 0 16.142 14.125"><path d="M1298.265,95h.787c.081,0,.091.015.091.094-.01.347,0,.7,0,1.043-.111.5-.222,1-.323,1.5l-2.149,10.575a1.686,1.686,0,0,1-.2.58.638.638,0,0,1-.726.312,1.519,1.519,0,0,1-.6-.3c-1.13-.867-2.25-1.728-3.37-2.6a.21.21,0,0,0-.333.02c-.484.5-.968,1-1.473,1.489a1.648,1.648,0,0,1-.605.486c-.252.087-.3.036-.283-.23l.091-1.385c.05-.706.1-1.423.141-2.134a.368.368,0,0,1,.1-.226c.111-.1.212-.2.313-.3l3.148-2.965c.676-.633,1.342-1.264,2.018-1.9q.651-.613,1.3-1.231a.184.184,0,0,0,.091-.231.2.2,0,0,0-.252-.061,1.132,1.132,0,0,0-.394.2l-5.206,3.421-3.027,1.989a.33.33,0,0,1-.3.066q-1.786-.59-3.572-1.174a.865.865,0,0,1-.535-.421v-.219a1.587,1.587,0,0,1,.868-.622q4.873-1.962,9.766-3.925Z" transform="translate(-1283 -95)"/></svg></a></li>
+											</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+							<nav aria-label="Хлебные крошки">
+								<ol class="breadcrumb">
+									<li class="breadcrumb__item"><a href="index.html">Главная</a></li>
+									<li class="breadcrumb__item active" aria-current="page">Новости</li>
+								</ol>
+							</nav>
+							<h1 class="page-headline">Новости</h1>
+				<div class="page-with-aside">
+					<div>
+									<form class="filter filter_mobile" action="">
+										<h2 class="filter__headline">Фильтр новостей</h2>
+										<div class="filter-item"><span class="filter-item__title">Дата публикации</span>
+											<div class="filter-two-col">
+												<div>
+													<div class="select">
+														<select name="">
+															<option value="Декабрь">Декабрь</option>
+															<option value="Январь">Январь</option>
+															<option value="Февраль">Февраль</option>
+															<option value="Сентябрь">Сентябрь</option>
+														</select>
+													</div>
+												</div>
+												<div>
+													<div class="select">
+														<select name="">
+															<option value="2020">2020</option>
+															<option value="2021">2021</option>
+															<option value="2022">2022</option>
+															<option value="2023">2023</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="filter-two-col">
+											<div>
+												<button class="button button_block button_rounded button_wide button_empty" type="reset">Сбросить</button>
+											</div>
+											<div>
+												<button class="button button_block button_rounded button_wide" type="submit">Найти</button>
+											</div>
+										</div>
+									</form>
+						<ul class="page-news-list">
+										<li class="article-card">
+											<div class="article-card__img"><img alt="" src="assets/img/cap.jpg">
+												<div class="article-card__img-text">
+													<div class="article-card-tags"><span class="article-card-tags__alt">Нива </span>| <span class="article-card-tags__title">news</span></div>
+												</div>
+											</div>
+											<div class="article-card__main">
+												<h3 class="article-card__headline">Covid 19 пандемия. Обсуждаем создание вакцины!</h3>
+												<div class="article-card__bottom">
+													<div class="article-card-info article-card-info_black">
+														<time>Вчера в 13:21</time><span>
+															<svg xmlns="http://www.w3.org/2000/svg" width="12.559" height="8.372" viewBox="0 0 12.559 8.372"><path d="M12.483,8.368A6.993,6.993,0,0,0,6.279,4.5a6.994,6.994,0,0,0-6.2,3.868A.705.705,0,0,0,.076,9a6.993,6.993,0,0,0,6.2,3.868A6.994,6.994,0,0,0,12.483,9,.705.705,0,0,0,12.483,8.368Zm-6.2,3.458a3.14,3.14,0,1,1,3.14-3.14A3.14,3.14,0,0,1,6.279,11.826Zm0-5.233a2.078,2.078,0,0,0-.552.083A1.043,1.043,0,0,1,4.269,8.134a2.088,2.088,0,1,0,2.01-1.541Z" transform="translate(0 -4.5)"/></svg>457</span>
+													</div><span class="article-card__label">Новость</span>
+												</div>
+											</div><a class="link-block" href="article.html"></a>
+										</li>
+										<li class="article-card">
+											<div class="article-card__img"><img alt="" src="assets/img/news_02.png">
+												<div class="article-card__img-text">
+													<div class="article-card-tags"><span class="article-card-tags__alt">Нива </span>| <span class="article-card-tags__title">news</span></div>
+												</div>
+											</div>
+											<div class="article-card__main">
+												<h3 class="article-card__headline">Covid 19 пандемия. Обсуждаем создание вакцины!</h3>
+												<div class="article-card__bottom">
+													<div class="article-card-info article-card-info_black">
+														<time>Вчера в 13:21</time><span>
+															<svg xmlns="http://www.w3.org/2000/svg" width="12.559" height="8.372" viewBox="0 0 12.559 8.372"><path d="M12.483,8.368A6.993,6.993,0,0,0,6.279,4.5a6.994,6.994,0,0,0-6.2,3.868A.705.705,0,0,0,.076,9a6.993,6.993,0,0,0,6.2,3.868A6.994,6.994,0,0,0,12.483,9,.705.705,0,0,0,12.483,8.368Zm-6.2,3.458a3.14,3.14,0,1,1,3.14-3.14A3.14,3.14,0,0,1,6.279,11.826Zm0-5.233a2.078,2.078,0,0,0-.552.083A1.043,1.043,0,0,1,4.269,8.134a2.088,2.088,0,1,0,2.01-1.541Z" transform="translate(0 -4.5)"/></svg>457</span>
+													</div><span class="article-card__label">Новость</span>
+												</div>
+											</div><a class="link-block" href="article.html"></a>
+										</li>
+										<li class="article-card">
+											<div class="article-card__img"><img alt="" src="assets/img/news_03.png">
+												<div class="article-card__img-text">
+													<div class="article-card-tags"><span class="article-card-tags__alt">Нива </span>| <span class="article-card-tags__title">news</span></div>
+												</div>
+											</div>
+											<div class="article-card__main">
+												<h3 class="article-card__headline">Covid 19 пандемия. Обсуждаем создание вакцины!</h3>
+												<div class="article-card__bottom">
+													<div class="article-card-info article-card-info_black">
+														<time>Вчера в 13:21</time><span>
+															<svg xmlns="http://www.w3.org/2000/svg" width="12.559" height="8.372" viewBox="0 0 12.559 8.372"><path d="M12.483,8.368A6.993,6.993,0,0,0,6.279,4.5a6.994,6.994,0,0,0-6.2,3.868A.705.705,0,0,0,.076,9a6.993,6.993,0,0,0,6.2,3.868A6.994,6.994,0,0,0,12.483,9,.705.705,0,0,0,12.483,8.368Zm-6.2,3.458a3.14,3.14,0,1,1,3.14-3.14A3.14,3.14,0,0,1,6.279,11.826Zm0-5.233a2.078,2.078,0,0,0-.552.083A1.043,1.043,0,0,1,4.269,8.134a2.088,2.088,0,1,0,2.01-1.541Z" transform="translate(0 -4.5)"/></svg>457</span>
+													</div><span class="article-card__label">Новость</span>
+												</div>
+											</div><a class="link-block" href="article.html"></a>
+										</li>
+										<li class="article-card">
+											<div class="article-card__img"><img alt="" src="assets/img/news_04.png">
+												<div class="article-card__img-text">
+													<div class="article-card-tags"><span class="article-card-tags__alt">Нива </span>| <span class="article-card-tags__title">news</span></div>
+												</div>
+											</div>
+											<div class="article-card__main">
+												<h3 class="article-card__headline">Covid 19 пандемия. Обсуждаем создание вакцины!</h3>
+												<div class="article-card__bottom">
+													<div class="article-card-info article-card-info_black">
+														<time>Вчера в 13:21</time><span>
+															<svg xmlns="http://www.w3.org/2000/svg" width="12.559" height="8.372" viewBox="0 0 12.559 8.372"><path d="M12.483,8.368A6.993,6.993,0,0,0,6.279,4.5a6.994,6.994,0,0,0-6.2,3.868A.705.705,0,0,0,.076,9a6.993,6.993,0,0,0,6.2,3.868A6.994,6.994,0,0,0,12.483,9,.705.705,0,0,0,12.483,8.368Zm-6.2,3.458a3.14,3.14,0,1,1,3.14-3.14A3.14,3.14,0,0,1,6.279,11.826Zm0-5.233a2.078,2.078,0,0,0-.552.083A1.043,1.043,0,0,1,4.269,8.134a2.088,2.088,0,1,0,2.01-1.541Z" transform="translate(0 -4.5)"/></svg>457</span>
+													</div><span class="article-card__label">Новость</span>
+												</div>
+											</div><a class="link-block" href="article.html"></a>
+										</li>
+										<li class="article-card">
+											<div class="article-card__img"><img alt="" src="assets/img/news_02.png">
+												<div class="article-card__img-text">
+													<div class="article-card-tags"><span class="article-card-tags__alt">Нива </span>| <span class="article-card-tags__title">news</span></div>
+												</div>
+											</div>
+											<div class="article-card__main">
+												<h3 class="article-card__headline">Covid 19 пандемия. Обсуждаем создание вакцины!</h3>
+												<div class="article-card__bottom">
+													<div class="article-card-info article-card-info_black">
+														<time>Вчера в 13:21</time><span>
+															<svg xmlns="http://www.w3.org/2000/svg" width="12.559" height="8.372" viewBox="0 0 12.559 8.372"><path d="M12.483,8.368A6.993,6.993,0,0,0,6.279,4.5a6.994,6.994,0,0,0-6.2,3.868A.705.705,0,0,0,.076,9a6.993,6.993,0,0,0,6.2,3.868A6.994,6.994,0,0,0,12.483,9,.705.705,0,0,0,12.483,8.368Zm-6.2,3.458a3.14,3.14,0,1,1,3.14-3.14A3.14,3.14,0,0,1,6.279,11.826Zm0-5.233a2.078,2.078,0,0,0-.552.083A1.043,1.043,0,0,1,4.269,8.134a2.088,2.088,0,1,0,2.01-1.541Z" transform="translate(0 -4.5)"/></svg>457</span>
+													</div><span class="article-card__label">Новость</span>
+												</div>
+											</div><a class="link-block" href="article.html"></a>
+										</li>
+										<li class="article-card">
+											<div class="article-card__img"><img alt="" src="assets/img/news_03.png">
+												<div class="article-card__img-text">
+													<div class="article-card-tags"><span class="article-card-tags__alt">Нива </span>| <span class="article-card-tags__title">news</span></div>
+												</div>
+											</div>
+											<div class="article-card__main">
+												<h3 class="article-card__headline">Covid 19 пандемия. Обсуждаем создание вакцины!</h3>
+												<div class="article-card__bottom">
+													<div class="article-card-info article-card-info_black">
+														<time>Вчера в 13:21</time><span>
+															<svg xmlns="http://www.w3.org/2000/svg" width="12.559" height="8.372" viewBox="0 0 12.559 8.372"><path d="M12.483,8.368A6.993,6.993,0,0,0,6.279,4.5a6.994,6.994,0,0,0-6.2,3.868A.705.705,0,0,0,.076,9a6.993,6.993,0,0,0,6.2,3.868A6.994,6.994,0,0,0,12.483,9,.705.705,0,0,0,12.483,8.368Zm-6.2,3.458a3.14,3.14,0,1,1,3.14-3.14A3.14,3.14,0,0,1,6.279,11.826Zm0-5.233a2.078,2.078,0,0,0-.552.083A1.043,1.043,0,0,1,4.269,8.134a2.088,2.088,0,1,0,2.01-1.541Z" transform="translate(0 -4.5)"/></svg>457</span>
+													</div><span class="article-card__label">Новость</span>
+												</div>
+											</div><a class="link-block" href="article.html"></a>
+										</li>
+										<li class="article-card">
+											<div class="article-card__img"><img alt="" src="assets/img/news_02.png">
+												<div class="article-card__img-text">
+													<div class="article-card-tags"><span class="article-card-tags__alt">Нива </span>| <span class="article-card-tags__title">news</span></div>
+												</div>
+											</div>
+											<div class="article-card__main">
+												<h3 class="article-card__headline">Covid 19 пандемия. Обсуждаем создание вакцины!</h3>
+												<div class="article-card__bottom">
+													<div class="article-card-info article-card-info_black">
+														<time>Вчера в 13:21</time><span>
+															<svg xmlns="http://www.w3.org/2000/svg" width="12.559" height="8.372" viewBox="0 0 12.559 8.372"><path d="M12.483,8.368A6.993,6.993,0,0,0,6.279,4.5a6.994,6.994,0,0,0-6.2,3.868A.705.705,0,0,0,.076,9a6.993,6.993,0,0,0,6.2,3.868A6.994,6.994,0,0,0,12.483,9,.705.705,0,0,0,12.483,8.368Zm-6.2,3.458a3.14,3.14,0,1,1,3.14-3.14A3.14,3.14,0,0,1,6.279,11.826Zm0-5.233a2.078,2.078,0,0,0-.552.083A1.043,1.043,0,0,1,4.269,8.134a2.088,2.088,0,1,0,2.01-1.541Z" transform="translate(0 -4.5)"/></svg>457</span>
+													</div><span class="article-card__label">Новость</span>
+												</div>
+											</div><a class="link-block" href="article.html"></a>
+										</li>
+										<li class="article-card">
+											<div class="article-card__img"><img alt="" src="assets/img/news_04.png">
+												<div class="article-card__img-text">
+													<div class="article-card-tags"><span class="article-card-tags__alt">Нива </span>| <span class="article-card-tags__title">news</span></div>
+												</div>
+											</div>
+											<div class="article-card__main">
+												<h3 class="article-card__headline">Covid 19 пандемия. Обсуждаем создание вакцины!</h3>
+												<div class="article-card__bottom">
+													<div class="article-card-info article-card-info_black">
+														<time>Вчера в 13:21</time><span>
+															<svg xmlns="http://www.w3.org/2000/svg" width="12.559" height="8.372" viewBox="0 0 12.559 8.372"><path d="M12.483,8.368A6.993,6.993,0,0,0,6.279,4.5a6.994,6.994,0,0,0-6.2,3.868A.705.705,0,0,0,.076,9a6.993,6.993,0,0,0,6.2,3.868A6.994,6.994,0,0,0,12.483,9,.705.705,0,0,0,12.483,8.368Zm-6.2,3.458a3.14,3.14,0,1,1,3.14-3.14A3.14,3.14,0,0,1,6.279,11.826Zm0-5.233a2.078,2.078,0,0,0-.552.083A1.043,1.043,0,0,1,4.269,8.134a2.088,2.088,0,1,0,2.01-1.541Z" transform="translate(0 -4.5)"/></svg>457</span>
+													</div><span class="article-card__label">Новость</span>
+												</div>
+											</div><a class="link-block" href="article.html"></a>
+										</li>
+										<li class="article-card">
+											<div class="article-card__img"><img alt="" src="assets/img/news_02.png">
+												<div class="article-card__img-text">
+													<div class="article-card-tags"><span class="article-card-tags__alt">Нива </span>| <span class="article-card-tags__title">news</span></div>
+												</div>
+											</div>
+											<div class="article-card__main">
+												<h3 class="article-card__headline">Covid 19 пандемия. Обсуждаем создание вакцины!</h3>
+												<div class="article-card__bottom">
+													<div class="article-card-info article-card-info_black">
+														<time>Вчера в 13:21</time><span>
+															<svg xmlns="http://www.w3.org/2000/svg" width="12.559" height="8.372" viewBox="0 0 12.559 8.372"><path d="M12.483,8.368A6.993,6.993,0,0,0,6.279,4.5a6.994,6.994,0,0,0-6.2,3.868A.705.705,0,0,0,.076,9a6.993,6.993,0,0,0,6.2,3.868A6.994,6.994,0,0,0,12.483,9,.705.705,0,0,0,12.483,8.368Zm-6.2,3.458a3.14,3.14,0,1,1,3.14-3.14A3.14,3.14,0,0,1,6.279,11.826Zm0-5.233a2.078,2.078,0,0,0-.552.083A1.043,1.043,0,0,1,4.269,8.134a2.088,2.088,0,1,0,2.01-1.541Z" transform="translate(0 -4.5)"/></svg>457</span>
+													</div><span class="article-card__label">Новость</span>
+												</div>
+											</div><a class="link-block" href="article.html"></a>
+										</li>
+										<li class="article-card">
+											<div class="article-card__img"><img alt="" src="assets/img/news_04.png">
+												<div class="article-card__img-text">
+													<div class="article-card-tags"><span class="article-card-tags__alt">Нива </span>| <span class="article-card-tags__title">news</span></div>
+												</div>
+											</div>
+											<div class="article-card__main">
+												<h3 class="article-card__headline">Covid 19 пандемия. Обсуждаем создание вакцины!</h3>
+												<div class="article-card__bottom">
+													<div class="article-card-info article-card-info_black">
+														<time>Вчера в 13:21</time><span>
+															<svg xmlns="http://www.w3.org/2000/svg" width="12.559" height="8.372" viewBox="0 0 12.559 8.372"><path d="M12.483,8.368A6.993,6.993,0,0,0,6.279,4.5a6.994,6.994,0,0,0-6.2,3.868A.705.705,0,0,0,.076,9a6.993,6.993,0,0,0,6.2,3.868A6.994,6.994,0,0,0,12.483,9,.705.705,0,0,0,12.483,8.368Zm-6.2,3.458a3.14,3.14,0,1,1,3.14-3.14A3.14,3.14,0,0,1,6.279,11.826Zm0-5.233a2.078,2.078,0,0,0-.552.083A1.043,1.043,0,0,1,4.269,8.134a2.088,2.088,0,1,0,2.01-1.541Z" transform="translate(0 -4.5)"/></svg>457</span>
+													</div><span class="article-card__label">Новость</span>
+												</div>
+											</div><a class="link-block" href="article.html"></a>
+										</li>
+						</ul><a class="button button_block button_white button_big margin-bottom" href="">Показать ещё</a>
+									<nav class="articles-nav">
+										<button class="articles-nav_button" aria-label="Следующая страница">&#60;</button>
+										<ul>
+											<li><a class="articles-nav_button" href="">1</a></li>
+											<li><a class="articles-nav_button" href="">2</a></li>
+											<li><a class="articles-nav_button active" href="">3</a></li>
+											<li><a class="articles-nav_button" href="">4</a></li>
+											<li><a class="articles-nav_button" href="">5</a></li>
+										</ul>
+										<button class="articles-nav_button" aria-label="Предыдущая страница">&#62;</button>
+									</nav>
+					</div>
+					<aside>
+									<form class="filter undefined" action="">
+										<h2 class="filter__headline">Фильтр новостей</h2>
+										<div class="filter-item"><span class="filter-item__title">Дата публикации</span>
+											<div class="filter-two-col">
+												<div>
+													<div class="select">
+														<select name="">
+															<option value="Декабрь">Декабрь</option>
+															<option value="Январь">Январь</option>
+															<option value="Февраль">Февраль</option>
+															<option value="Сентябрь">Сентябрь</option>
+														</select>
+													</div>
+												</div>
+												<div>
+													<div class="select">
+														<select name="">
+															<option value="2020">2020</option>
+															<option value="2021">2021</option>
+															<option value="2022">2022</option>
+															<option value="2023">2023</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="filter-two-col">
+											<div>
+												<button class="button button_block button_rounded button_wide button_empty" type="reset">Сбросить</button>
+											</div>
+											<div>
+												<button class="button button_block button_rounded button_wide" type="submit">Найти</button>
+											</div>
+										</div>
+									</form>
+									<article class="commercial">
+										<!-- Для мобилок-планшетов этот блок будет по высоте таким же, как маленькая реклама, поэтому нужно будет подготовить другую картинку--><picture>
+<source srcset="assets/img/commercial-small.jpg" media="(max-width: 992px)">
+<img src="assets/img/commercial.jpg" alt="">
+</picture><span class="commercial__label">Реклама</span><span class="commercial__mark">Нива</span>
+										<h3 class="commercial__headline">Эффективная реклама в нашей газете</h3><a class="button button_rounded button_block commercial__button" href="#">Подробнее</a>
+									</article>
+									<article class="commercial"><img src="assets/img/commercial-small.jpg" alt=""><span class="commercial__label">Реклама</span>
+										<h3 class="commercial__headline">Управляем вместе</h3><a class="button button_rounded button_block commercial__button" href="#">Подробнее</a>
+									</article>
+					</aside>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="footer-desk">
+				<div class="footer-part">
+					<div class="container">
+						<div class="footer-top"><span class="footer-limitation">16+</span>
+							<ul class="footer-phones">
+								<li class="footer-link-with-icon">
+									<div><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="10.347" height="11.117" viewBox="0 0 10.347 11.117">
+<path d="M682.632,277.181a4.142,4.142,0,0,1-1.834-.446,10.045,10.045,0,0,1-3.169-2.566,9.587,9.587,0,0,1-1.879-3,4.268,4.268,0,0,1,.1-3.472A4.211,4.211,0,0,1,677.3,266.2a.648.648,0,0,1,.832.038,4.284,4.284,0,0,1,1.391,2.243.927.927,0,0,1-.356.963c-.213.174-.428.346-.643.517a.932.932,0,0,0-.363,1.137,2.393,2.393,0,0,0,.259.578,7.905,7.905,0,0,0,2.026,2.252,2.958,2.958,0,0,0,.281.189.98.98,0,0,0,1.34-.167c.141-.138.272-.287.414-.424a1.141,1.141,0,0,1,1.436-.22,5.973,5.973,0,0,1,1.634,1.393.759.759,0,0,1-.106,1.162,4.7,4.7,0,0,1-1.391,1.054A4.009,4.009,0,0,1,682.632,277.181Z" transform="translate(-675.43 -266.064)" fill="#cbcbcb"/>
+</svg><a href="tel:+73422962232">(342) 296 22 32</a>
+									</div><span>Телефон редакции</span>
+								</li>
+								<li class="footer-link-with-icon">
+									<div><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="10.347" height="11.117" viewBox="0 0 10.347 11.117">
+<path d="M682.632,277.181a4.142,4.142,0,0,1-1.834-.446,10.045,10.045,0,0,1-3.169-2.566,9.587,9.587,0,0,1-1.879-3,4.268,4.268,0,0,1,.1-3.472A4.211,4.211,0,0,1,677.3,266.2a.648.648,0,0,1,.832.038,4.284,4.284,0,0,1,1.391,2.243.927.927,0,0,1-.356.963c-.213.174-.428.346-.643.517a.932.932,0,0,0-.363,1.137,2.393,2.393,0,0,0,.259.578,7.905,7.905,0,0,0,2.026,2.252,2.958,2.958,0,0,0,.281.189.98.98,0,0,0,1.34-.167c.141-.138.272-.287.414-.424a1.141,1.141,0,0,1,1.436-.22,5.973,5.973,0,0,1,1.634,1.393.759.759,0,0,1-.106,1.162,4.7,4.7,0,0,1-1.391,1.054A4.009,4.009,0,0,1,682.632,277.181Z" transform="translate(-675.43 -266.064)" fill="#cbcbcb"/>
+</svg><a href="tel:+73422962133">(342) 296 21 33</a>
+									</div><span>Телефон рекламы</span>
+								</li>
+							</ul>
+							<div class="footer-link-with-icon">
+								<div><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="12.255" height="9.077" viewBox="0 0 12.255 9.077">
+<path d="M224.068,275.012l-6.1-5.057h12.222Zm0,1.65-6.127-5.076v7.447h12.255V271.6Z" transform="translate(-217.94 -269.955)" fill="#cbcbcb"/>
+</svg><a href="mailto:gazetaniva@yandex.ru">gazetaniva@yandex.ru</a>
+								</div><span>Почта для связи</span>
+							</div>
+							<address class="footer-address"><span>624992, Пермский край, город</span><span>Пермь, ул. Революции 34, офис 733</span></address>
+										<ul class="soc-list">
+											<li><a href="#" aria-label="ВКонтакте"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="21.891" height="14.125" viewBox="0 0 21.891 14.125"><path d="M1416.11,96.206c.4,0,.8.012,1.2,0a.967.967,0,0,1,.9.515q.442.687.848,1.388c.612,1.034,1.166,2.1,1.8,3.11a5.745,5.745,0,0,0,.789,1.039c.342.323.577.268.754-.179a6.155,6.155,0,0,0,.294-1.671c.059-.824.047-1.659.047-2.49a.745.745,0,0,0-.824-.886c-.141,0-.294.007-.448.006-.059,0-.141.027-.165-.042a.184.184,0,0,1,.071-.185,4.165,4.165,0,0,1,2.273-1.313,10.35,10.35,0,0,1,1.719-.052c.271-.008.542,0,.824,0a.825.825,0,0,1,.86.669,4.744,4.744,0,0,1,.153,1.521c0,1.147-.117,2.293-.023,3.44a3.554,3.554,0,0,0,.212,1,.521.521,0,0,0,.978.118,2.582,2.582,0,0,0,.318-.643,30.1,30.1,0,0,1,2.732-5.231.85.85,0,0,1,.754-.366,8.1,8.1,0,0,1,3.227.51,1.658,1.658,0,0,1,.177.088.416.416,0,0,1,.259.589,6,6,0,0,1-.683,1.531c-.659,1.189-1.472,2.273-2.214,3.4a6.148,6.148,0,0,0-.436.72.75.75,0,0,0,.224,1.178,10.867,10.867,0,0,1,1.531,1.487,12.308,12.308,0,0,1,1.378,1.785,1.511,1.511,0,0,1-.118,1.8,1.49,1.49,0,0,1-1.107.509c-.836.013-1.672,0-2.52,0a.824.824,0,0,1-.6-.235c-.235-.236-.471-.471-.695-.707a16.749,16.749,0,0,0-1.625-1.6c-.129-.1-.247-.187-.376-.278a1.117,1.117,0,0,0-1.343-.127,1.656,1.656,0,0,0-.836,1.413,3.993,3.993,0,0,1-.094.919.706.706,0,0,1-.765.611,7.381,7.381,0,0,1-2.6-.316,7.708,7.708,0,0,1-2.85-1.875,22.615,22.615,0,0,1-5.276-8.159c-.247-.646-.495-1.3-.742-1.941-.224-.6-.059-.942.542-1,.495-.042.989-.008,1.484-.008v-.046Z" transform="translate(-1413.989 -95.432)"/></svg></a></li>
+											<li><a href="#" aria-label="Одноклассники"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="8.974" height="15.125" viewBox="0 0 8.974 15.125"><path d="M1450.34,101.692v-.413c.035-.088.062-.177.1-.265a.917.917,0,0,1,.742-.557,1.038,1.038,0,0,1,.707.2c.15.095.292.208.442.3a4.818,4.818,0,0,0,3.259.624,4.29,4.29,0,0,0,2.058-.838,1.412,1.412,0,0,1,.494-.251.9.9,0,0,1,1.033.429,2.451,2.451,0,0,1,.141.353v.383a1.129,1.129,0,0,1-.344.5,5.14,5.14,0,0,1-2.579,1.247c-.247.046-.5.088-.768.131.035.039.053.062.071.082l1.537,1.55,1.139,1.158a.883.883,0,0,1,.256.905.959.959,0,0,1-1.634.451c-.671-.7-1.351-1.373-2.022-2.064-.1-.105-.159-.11-.265,0-.662.682-1.325,1.356-1.987,2.031a1.115,1.115,0,0,1-.442.3,1.037,1.037,0,0,1-1.245-.779.96.96,0,0,1,.282-.856c.875-.878,1.74-1.759,2.605-2.64a.227.227,0,0,0,.106-.14.255.255,0,0,0-.053-.018c-.115-.019-.23-.036-.344-.052a5.355,5.355,0,0,1-2.738-1.137,1.708,1.708,0,0,1-.548-.64Zm4.019-8.832h.936a.408.408,0,0,0,.053.015,3.86,3.86,0,0,1,3.206,4.613,3.807,3.807,0,1,1-4.884-4.47,4.266,4.266,0,0,1,.689-.155ZM1453,96.686a1.833,1.833,0,1,0,3.665.006,1.887,1.887,0,0,0-1.837-1.878A1.86,1.86,0,0,0,1453,96.693Z" transform="translate(-1450.34 -92.86)"/></svg></a></li>
+											<li><a href="#" aria-label="Ютуб"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="19.537" height="13.737" viewBox="0 0 19.537 13.737"><path d="M20.179,6.649a2.455,2.455,0,0,0-1.727-1.738C16.928,4.5,10.818,4.5,10.818,4.5s-6.109,0-7.633.411A2.455,2.455,0,0,0,1.458,6.649a25.752,25.752,0,0,0-.408,4.733,25.752,25.752,0,0,0,.408,4.733,2.418,2.418,0,0,0,1.727,1.711c1.524.411,7.633.411,7.633.411s6.109,0,7.633-.411a2.418,2.418,0,0,0,1.727-1.711,25.752,25.752,0,0,0,.408-4.733,25.752,25.752,0,0,0-.408-4.733ZM8.82,14.287V8.477l5.106,2.9-5.106,2.9Z" transform="translate(-1.05 -4.5)"/></svg></a></li>
+											<li><a href="#" aria-label="Инстаграм"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="14.928" height="15.125" viewBox="0 0 14.928 15.125"><path d="M1487.243,108.834h-4.5a2.868,2.868,0,0,1-2.854-2.2,3.045,3.045,0,0,1-.094-.75V96.666a2.891,2.891,0,0,1,2.481-2.929,3.02,3.02,0,0,1,.477-.027h9a2.886,2.886,0,0,1,2.886,2.271,3.183,3.183,0,0,1,.073.7q.016,4.585.01,9.169a2.917,2.917,0,0,1-2.5,2.955,3.29,3.29,0,0,1-.529.026C1490.2,108.835,1488.727,108.834,1487.243,108.834Zm-6-9.1v6.1a1.433,1.433,0,0,0,1.505,1.527h9a1.442,1.442,0,0,0,1.505-1.541V99.742H1491.1c.073.461.166.911.208,1.365a3.3,3.3,0,0,1-.166,1.382,3.944,3.944,0,0,1-.612,1.228,4.053,4.053,0,0,1-7.089-.957,4.112,4.112,0,0,1,.01-3.024h-2.211Zm8.625,1.536a2.674,2.674,0,1,0,0,.005Zm3.1-5.806h-2.512v2.541h2.512" transform="translate(-1479.789 -93.709)"/></svg></a></li>
+											<li><a href="#" aria-label="Твитер"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="17.267" height="15.125" viewBox="0 0 17.267 15.125"><path d="M1387.213,106.839a3.7,3.7,0,0,1-3.335-2.654,3.314,3.314,0,0,0,1.576-.067,3.861,3.861,0,0,1-2.828-3.8,3.518,3.518,0,0,0,1.63.472,4,4,0,0,1-1.112-5.081,9.989,9.989,0,0,0,7.338,3.982c-.022-.23-.054-.432-.065-.633a3.734,3.734,0,0,1,2.989-4.016,3.294,3.294,0,0,1,3.011,1.015.3.3,0,0,0,.334.1,6.989,6.989,0,0,0,1.867-.763c.054-.029.1-.056.183-.1a3.353,3.353,0,0,1-.594,1.17c-.27.324-.583.616-.863.908a6.654,6.654,0,0,0,1.91-.565.713.713,0,0,1-.086.157,7.41,7.41,0,0,1-1.532,1.687.294.294,0,0,0-.119.288c.119,4.111-2.137,8.633-6.216,10.4a9.7,9.7,0,0,1-4.532.755,9.533,9.533,0,0,1-4.6-1.54,2.2,2.2,0,0,1-.183-.126,6.906,6.906,0,0,0,5.223-1.586Z" transform="translate(-1381.99 -94.993)"/></svg></a></li>
+											<li><a href="#" aria-label="Ватсап"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="15.068" height="15.125" viewBox="0 0 15.068 15.125"><path d="M1364.113,102.591a7.55,7.55,0,0,1-11.249,6.57.991.991,0,0,0-.9-.092c-.616.216-1.243.415-1.859.617-.432.138-.551-.014-.4-.427.173-.519.324-1.049.519-1.557a1.285,1.285,0,0,0-.119-1.244A7.583,7.583,0,0,1,1356.744,95a7.456,7.456,0,0,1,7.37,7.587Zm-11.767-2a2.044,2.044,0,0,0,.13.808,8.5,8.5,0,0,0,6.278,5.31,2.1,2.1,0,0,0,1.988-.756.973.973,0,0,0-.313-1.637c-.173-.085-.346-.171-.508-.254-.929-.451-.951-.467-1.588.334a.756.756,0,0,1-1.08.239,5.9,5.9,0,0,1-2.561-2.269.606.606,0,0,1,.043-.851,1.156,1.156,0,0,0,.184-1.591c-.151-.275-.249-.583-.378-.864a.821.821,0,0,0-1.34-.3,2.386,2.386,0,0,0-.854,1.832Z" transform="translate(-1349.046 -95.003)"/></svg></a></li>
+											<li><a href="#" aria-label="Вайбер"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="14.236" height="15.125" viewBox="0 0 14.236 15.125"><path d="M1323.04,94a14.4,14.4,0,0,1,4.135.56,3.777,3.777,0,0,1,2.727,2.885,11.778,11.778,0,0,1-.036,5.787,3.613,3.613,0,0,1-2.664,2.723,14.559,14.559,0,0,1-4.75.544.822.822,0,0,0-.713.345q-.882,1.018-1.791,2.013a.439.439,0,0,1-.517.249.534.534,0,0,1-.151-.529c0-.663-.009-1.328,0-1.991a.587.587,0,0,0-.419-.655,4.1,4.1,0,0,1-2.7-3.5,13.015,13.015,0,0,1,.036-4.2c.374-2.346,1.613-3.543,4.063-3.994A12.238,12.238,0,0,1,1323.04,94Zm4.17,9.385a.6.6,0,0,0-.2-.467,6.461,6.461,0,0,0-1.586-1.075.69.69,0,0,0-.9.241.98.98,0,0,1-1.355.254,4.3,4.3,0,0,1-2.13-2.139.777.777,0,0,1,.25-1.149.713.713,0,0,0,.187-1.1,11.311,11.311,0,0,0-.731-1.026c-.508-.6-.748-.654-1.239-.344-.864.552-1.132,1.046-.873,1.724a10.586,10.586,0,0,0,6.763,6.416,1.666,1.666,0,0,0,1.809-1.334Zm-3.8-7.459c-.143.047-.428-.113-.428.167-.009.209.268.131.419.165.125.029.258.037.383.062a3.837,3.837,0,0,1,3.359,3.653c.018.1.036.193.053.287.036.11.062.249.2.223a.2.2,0,0,0,.125-.235,4.251,4.251,0,0,0-.027-.585,4.341,4.341,0,0,0-4.09-3.737Zm.232,1.131c-.08.005-.294-.081-.321.118s.187.188.33.216c.125.026.258.038.383.07a2.45,2.45,0,0,1,1.969,2.228c.027.174-.036.471.231.429.241-.037.169-.31.152-.495a2.876,2.876,0,0,0-2.745-2.565Z" transform="translate(-1316.009 -93.995)"/></svg></a></li>
+											<li><a href="#" aria-label="Телеграм"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="16.142" height="14.125" viewBox="0 0 16.142 14.125"><path d="M1298.265,95h.787c.081,0,.091.015.091.094-.01.347,0,.7,0,1.043-.111.5-.222,1-.323,1.5l-2.149,10.575a1.686,1.686,0,0,1-.2.58.638.638,0,0,1-.726.312,1.519,1.519,0,0,1-.6-.3c-1.13-.867-2.25-1.728-3.37-2.6a.21.21,0,0,0-.333.02c-.484.5-.968,1-1.473,1.489a1.648,1.648,0,0,1-.605.486c-.252.087-.3.036-.283-.23l.091-1.385c.05-.706.1-1.423.141-2.134a.368.368,0,0,1,.1-.226c.111-.1.212-.2.313-.3l3.148-2.965c.676-.633,1.342-1.264,2.018-1.9q.651-.613,1.3-1.231a.184.184,0,0,0,.091-.231.2.2,0,0,0-.252-.061,1.132,1.132,0,0,0-.394.2l-5.206,3.421-3.027,1.989a.33.33,0,0,1-.3.066q-1.786-.59-3.572-1.174a.865.865,0,0,1-.535-.421v-.219a1.587,1.587,0,0,1,.868-.622q4.873-1.962,9.766-3.925Z" transform="translate(-1283 -95)"/></svg></a></li>
+										</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-part">
+					<div class="container">
+						<nav class="footer-nav">
+							<ul>
+											<li class="footer-nav__item"><a href="news.html">Новости</a></li>
+											<li class="footer-nav__item"><a href="archive.html">Архив</a></li>
+											<li class="footer-nav__item"><a href="news.html">Статьи</a></li>
+											<li class="footer-nav__item"><a href="typical.html">Губерния</a></li>
+											<li class="footer-nav__item"><a href="news.html">Впн-2020</a></li>
+											<li class="footer-nav__item"><a href="contacts.html">Рекламодателю</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="footer-part">
+					<div class="container">
+						<div class="footer-description">
+							<p>Средство массовой информации сайт «НИВА» зарегистрировано Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций Эл № ФС77-75287 от 15 марта 2019 года. Адрес редакции: г.Пермь, ул. 2-я Красавинская, 84, тел 8(342)2962232. Учредитель МУП ПМР «Редакция газеты «НИВА» email: gazetaniva@yandex.ru Главный редактор Ю.А.Сидорова</p>
+							<div class="footer-description-link"><img src="assets/img/perm-logo.png" alt=""><a href="#">Сайт Пермского района</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-part">
+					<div class="container">
+						<div class="footer-bottom">
+							<div class="logo-wrapper"><a class="logo" href="index.html"><img src="assets/img/logo-niva.png" alt=""></a><span class="logo-description">Еженедельная газета пермского района</span></div><span class="footer-copy">© 2011 — 2020 ООО «Газета Нива Пермь»</span><a class="praweb" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="29px">
+<path d="M62.295,14.730 C61.193,14.730 60.591,14.076 60.591,12.932 L60.591,9.214 C60.591,8.071 61.193,7.417 62.295,7.417 C63.396,7.417 63.999,8.071 63.999,9.214 L63.999,12.932 C63.999,14.076 63.396,14.730 62.295,14.730 ZM62.876,9.143 C62.876,8.633 62.652,8.438 62.295,8.438 C61.938,8.438 61.713,8.633 61.713,9.143 L61.713,13.003 C61.713,13.514 61.938,13.708 62.295,13.708 C62.652,13.708 62.876,13.514 62.876,13.003 L62.876,9.143 ZM59.013,21.143 C58.128,21.143 57.644,20.626 57.644,19.722 L57.644,16.785 C57.644,15.881 58.128,15.364 59.013,15.364 C59.898,15.364 60.381,15.881 60.381,16.785 L60.381,19.722 C60.381,20.626 59.898,21.143 59.013,21.143 ZM59.480,16.728 C59.480,16.325 59.299,16.171 59.013,16.171 C58.726,16.171 58.545,16.325 58.545,16.728 L58.545,19.779 C58.545,20.182 58.726,20.336 59.013,20.336 C59.299,20.336 59.480,20.182 59.480,19.779 L59.480,16.728 ZM58.745,7.499 L59.867,7.499 L59.867,14.648 L58.745,14.648 L58.745,7.499 ZM56.358,14.648 L54.583,14.648 L54.583,7.499 L56.358,7.499 C57.480,7.499 58.031,8.122 58.031,9.266 L58.031,12.881 C58.031,14.025 57.480,14.648 56.358,14.648 ZM56.909,9.214 C56.909,8.704 56.695,8.520 56.338,8.520 L55.705,8.520 L55.705,13.626 L56.338,13.626 C56.695,13.626 56.909,13.443 56.909,12.932 L56.909,9.214 ZM52.145,14.740 C51.043,14.740 50.472,14.086 50.472,12.942 L50.472,7.499 L51.594,7.499 L51.594,13.014 C51.594,13.524 51.818,13.708 52.175,13.708 C52.532,13.708 52.757,13.524 52.757,13.014 L52.757,7.499 L53.818,7.499 L53.818,12.942 C53.818,14.086 53.246,14.740 52.145,14.740 ZM50.728,20.336 C51.015,20.336 51.195,20.190 51.195,19.787 L51.195,15.429 L52.047,15.429 L52.047,19.730 C52.047,20.634 51.589,21.151 50.703,21.151 C49.818,21.151 49.359,20.634 49.359,19.730 L49.359,15.429 L50.261,15.429 L50.261,19.787 C50.261,20.190 50.441,20.336 50.728,20.336 ZM48.860,14.648 L47.738,14.648 L47.738,8.520 L46.564,8.520 L46.564,7.499 L50.033,7.499 L50.033,8.520 L48.860,8.520 L48.860,14.648 ZM44.575,14.730 C43.473,14.730 42.902,14.076 42.902,12.932 L42.902,12.493 L43.963,12.493 L43.963,13.003 C43.963,13.514 44.187,13.698 44.544,13.698 C44.902,13.698 45.126,13.514 45.126,13.003 C45.126,11.533 42.933,11.257 42.933,9.214 C42.933,8.071 43.494,7.417 44.585,7.417 C45.677,7.417 46.238,8.071 46.238,9.214 L46.238,9.439 L45.177,9.439 L45.177,9.143 C45.177,8.633 44.973,8.438 44.616,8.438 C44.259,8.438 44.055,8.633 44.055,9.143 C44.055,10.614 46.248,10.890 46.248,12.932 C46.248,14.076 45.677,14.730 44.575,14.730 ZM44.247,16.236 L42.689,16.236 L42.689,17.810 L43.927,17.810 L43.927,18.617 L42.689,18.617 L42.689,20.271 L44.247,20.271 L44.247,21.078 L41.788,21.078 L41.788,15.429 L44.247,15.429 L44.247,16.236 ZM39.502,21.078 L39.174,18.068 L38.846,21.078 L37.608,21.078 L36.969,15.429 L37.846,15.429 L38.330,19.884 L38.764,15.429 L39.633,15.429 L40.083,19.916 L40.551,15.429 L41.338,15.429 L40.698,21.078 L39.502,21.078 ZM39.117,14.648 L37.352,14.648 L37.352,7.499 L39.046,7.499 C40.209,7.499 40.709,8.040 40.709,9.143 L40.709,9.399 C40.709,10.134 40.484,10.604 39.984,10.839 C40.586,11.073 40.821,11.615 40.821,12.370 L40.821,12.952 C40.821,14.055 40.239,14.648 39.117,14.648 ZM39.586,9.256 C39.586,8.745 39.413,8.520 39.015,8.520 L38.474,8.520 L38.474,10.410 L38.913,10.410 C39.331,10.410 39.586,10.225 39.586,9.654 L39.586,9.256 ZM39.699,12.299 C39.699,11.635 39.484,11.430 38.974,11.430 L38.474,11.430 L38.474,13.626 L39.117,13.626 C39.495,13.626 39.699,13.453 39.699,12.922 L39.699,12.299 ZM35.813,20.053 L34.707,20.053 L34.551,21.078 L33.723,21.078 L34.642,15.429 L35.961,15.429 L36.879,21.078 L35.969,21.078 L35.813,20.053 ZM35.256,16.430 L34.822,19.286 L35.691,19.286 L35.256,16.430 ZM33.598,7.499 L36.659,7.499 L36.659,8.520 L34.720,8.520 L34.720,10.512 L36.261,10.512 L36.261,11.533 L34.720,11.533 L34.720,13.626 L36.659,13.626 L36.659,14.648 L33.598,14.648 L33.598,7.499 ZM32.470,20.384 L32.470,19.496 C32.470,18.972 32.290,18.778 31.880,18.778 L31.569,18.778 L31.569,21.078 L30.667,21.078 L30.667,15.429 L32.027,15.429 C32.962,15.429 33.364,15.857 33.364,16.728 L33.364,17.172 C33.364,17.753 33.175,18.133 32.773,18.318 C33.224,18.504 33.372,18.932 33.372,19.520 L33.372,20.392 C33.372,20.666 33.380,20.868 33.470,21.078 L32.552,21.078 C32.503,20.933 32.470,20.844 32.470,20.384 ZM32.462,16.817 C32.462,16.414 32.323,16.236 32.003,16.236 L31.569,16.236 L31.569,17.971 L31.921,17.971 C32.257,17.971 32.462,17.826 32.462,17.374 L32.462,16.817 ZM30.752,14.648 L30.344,10.839 L29.936,14.648 L28.396,14.648 L27.600,7.499 L28.691,7.499 L29.293,13.136 L29.834,7.499 L30.915,7.499 L31.477,13.177 L32.058,7.499 L33.037,7.499 L32.241,14.648 L30.752,14.648 ZM30.249,16.825 L30.249,17.559 C30.249,18.463 29.807,18.956 28.905,18.956 L28.479,18.956 L28.479,21.078 L27.577,21.078 L27.577,15.429 L28.905,15.429 C29.807,15.429 30.249,15.921 30.249,16.825 ZM28.479,18.148 L28.905,18.148 C29.192,18.148 29.348,18.020 29.348,17.616 L29.348,16.768 C29.348,16.365 29.192,16.236 28.905,16.236 L28.479,16.236 L28.479,18.148 ZM25.314,21.663 C25.314,21.769 25.286,21.830 25.189,21.885 C23.065,23.093 20.944,24.305 18.823,25.517 C16.814,26.664 14.805,27.811 12.798,28.959 C12.735,28.995 12.684,29.011 12.611,28.970 C11.275,28.218 9.938,27.469 8.599,26.721 C8.527,26.681 8.499,26.635 8.500,26.553 C8.503,25.106 8.503,23.659 8.505,22.212 C8.505,22.083 8.514,22.077 8.628,22.141 C9.953,22.893 11.278,23.645 12.601,24.400 C12.698,24.456 12.768,24.455 12.865,24.400 C14.859,23.267 16.856,22.138 18.851,21.007 C19.674,20.541 20.496,20.075 21.319,19.610 C21.385,19.574 21.412,19.532 21.410,19.457 C21.406,19.291 21.408,19.125 21.409,18.960 C21.425,15.870 21.421,12.781 21.425,9.692 C21.425,9.598 21.398,9.545 21.314,9.501 C20.402,9.022 19.516,8.497 18.619,7.991 C17.048,7.105 15.481,6.215 13.912,5.326 C13.550,5.121 13.187,4.918 12.828,4.710 C12.759,4.670 12.706,4.671 12.639,4.709 C10.761,5.770 8.882,6.829 7.002,7.888 C6.199,8.341 5.395,8.793 4.590,9.245 C4.321,9.397 4.317,9.397 4.322,9.707 C4.349,11.411 4.326,13.115 4.344,14.818 C4.362,16.447 4.344,18.077 4.364,19.705 C4.378,20.792 4.371,21.878 4.372,22.964 C4.372,23.386 4.364,23.809 4.360,24.231 C4.359,24.342 4.351,24.345 4.251,24.290 C2.906,23.547 1.562,22.803 0.215,22.063 C0.114,22.007 0.078,21.946 0.077,21.829 C0.058,20.359 0.073,18.889 0.056,17.419 C0.041,16.138 0.056,14.857 0.038,13.576 C0.019,12.217 0.035,10.858 0.017,9.498 C0.007,8.757 0.012,8.016 0.001,7.274 C-0.000,7.175 0.030,7.117 0.118,7.067 C1.326,6.391 2.531,5.711 3.737,5.032 C5.265,4.171 6.793,3.309 8.321,2.448 C9.756,1.639 11.192,0.832 12.626,0.022 C12.694,-0.016 12.746,-0.017 12.814,0.021 C14.599,1.035 16.385,2.048 18.171,3.060 C20.421,4.335 22.671,5.609 24.921,6.883 C25.026,6.942 25.129,7.004 25.235,7.061 C25.290,7.091 25.316,7.132 25.312,7.195 C25.309,7.230 25.311,7.266 25.311,7.302 C25.311,9.689 25.311,12.076 25.311,14.463 C25.311,16.863 25.311,19.263 25.314,21.663 ZM14.439,17.492 C14.439,17.492 14.523,18.697 13.932,19.550 C13.305,20.453 12.000,21.007 12.000,21.007 L11.162,19.290 C11.162,19.290 11.935,19.183 12.686,18.829 C13.623,18.388 14.439,17.492 14.439,17.492 ZM11.927,11.401 C13.968,9.968 16.635,9.827 16.991,9.814 L17.012,9.793 C17.012,9.793 17.012,9.800 17.012,9.814 C17.025,9.813 17.032,9.813 17.032,9.813 C17.032,9.813 17.025,9.825 17.012,9.848 C17.008,10.268 16.932,13.019 15.586,15.068 C14.389,16.892 11.654,18.272 11.654,18.272 L10.312,16.838 L10.315,16.835 L8.828,15.459 C8.828,15.459 10.131,12.663 11.927,11.401 ZM14.632,15.153 C16.172,13.342 16.531,11.061 16.531,11.061 C16.531,11.061 15.990,12.905 14.525,14.628 C13.140,16.257 11.091,16.978 11.091,16.978 C11.091,16.978 13.342,16.670 14.632,15.153 ZM9.549,12.405 C9.549,12.405 8.687,13.256 8.283,14.210 C7.959,14.976 7.883,15.753 7.883,15.753 L6.136,14.982 C6.136,14.982 6.638,13.655 7.515,12.992 C8.343,12.367 9.549,12.405 9.549,12.405 ZM47.500,16.728 L47.500,16.930 C47.500,17.511 47.320,17.882 46.918,18.068 C47.401,18.253 47.590,18.682 47.590,19.279 L47.590,19.739 C47.590,20.610 47.123,21.078 46.221,21.078 L44.803,21.078 L44.803,15.429 L46.164,15.429 C47.098,15.429 47.500,15.857 47.500,16.728 ZM45.705,20.271 L46.221,20.271 C46.525,20.271 46.688,20.134 46.688,19.714 L46.688,19.222 C46.688,18.697 46.516,18.536 46.106,18.536 L45.705,18.536 L45.705,20.271 ZM45.705,16.236 L45.705,17.729 L46.057,17.729 C46.393,17.729 46.598,17.584 46.598,17.132 L46.598,16.817 C46.598,16.414 46.459,16.236 46.139,16.236 L45.705,16.236 ZM54.711,18.810 L54.711,15.429 L55.514,15.429 L55.514,21.078 L54.588,21.078 L53.465,16.987 L53.465,21.078 L52.653,21.078 L52.653,15.429 L53.785,15.429 L54.711,18.810 ZM57.063,21.078 L56.161,21.078 L56.161,15.429 L57.063,15.429 L57.063,21.078 ZM63.012,18.810 L63.012,15.429 L63.815,15.429 L63.815,21.078 L62.889,21.078 L61.766,16.987 L61.766,21.078 L60.955,21.078 L60.955,15.429 L62.086,15.429 L63.012,18.810 Z"></path>
+</svg></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-mobile">
+				<div class="container">
+					<div class="footer-part">
+						<div class="footer-mobile-top">
+							<div class="logo-wrapper"><a class="logo" href="index.html"><img src="assets/img/logo-niva.png" alt=""></a></div><span class="footer-limitation">16+</span>
+						</div>
+					</div>
+					<div class="footer-part">
+						<div class="footer-mobile-phone"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="10.347" height="11.117" viewBox="0 0 10.347 11.117">
+<path d="M682.632,277.181a4.142,4.142,0,0,1-1.834-.446,10.045,10.045,0,0,1-3.169-2.566,9.587,9.587,0,0,1-1.879-3,4.268,4.268,0,0,1,.1-3.472A4.211,4.211,0,0,1,677.3,266.2a.648.648,0,0,1,.832.038,4.284,4.284,0,0,1,1.391,2.243.927.927,0,0,1-.356.963c-.213.174-.428.346-.643.517a.932.932,0,0,0-.363,1.137,2.393,2.393,0,0,0,.259.578,7.905,7.905,0,0,0,2.026,2.252,2.958,2.958,0,0,0,.281.189.98.98,0,0,0,1.34-.167c.141-.138.272-.287.414-.424a1.141,1.141,0,0,1,1.436-.22,5.973,5.973,0,0,1,1.634,1.393.759.759,0,0,1-.106,1.162,4.7,4.7,0,0,1-1.391,1.054A4.009,4.009,0,0,1,682.632,277.181Z" transform="translate(-675.43 -266.064)" fill="#cbcbcb"/>
+</svg>
+							<div><a href="tel:+73422962232">(342) 296 22 32</a><span>Телефон редакции</span></div>
+						</div>
+					</div>
+					<div class="footer-part">
+						<div class="footer-mobile-phone"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="10.347" height="11.117" viewBox="0 0 10.347 11.117">
+<path d="M682.632,277.181a4.142,4.142,0,0,1-1.834-.446,10.045,10.045,0,0,1-3.169-2.566,9.587,9.587,0,0,1-1.879-3,4.268,4.268,0,0,1,.1-3.472A4.211,4.211,0,0,1,677.3,266.2a.648.648,0,0,1,.832.038,4.284,4.284,0,0,1,1.391,2.243.927.927,0,0,1-.356.963c-.213.174-.428.346-.643.517a.932.932,0,0,0-.363,1.137,2.393,2.393,0,0,0,.259.578,7.905,7.905,0,0,0,2.026,2.252,2.958,2.958,0,0,0,.281.189.98.98,0,0,0,1.34-.167c.141-.138.272-.287.414-.424a1.141,1.141,0,0,1,1.436-.22,5.973,5.973,0,0,1,1.634,1.393.759.759,0,0,1-.106,1.162,4.7,4.7,0,0,1-1.391,1.054A4.009,4.009,0,0,1,682.632,277.181Z" transform="translate(-675.43 -266.064)" fill="#cbcbcb"/>
+</svg>
+							<div><a href="tel:+73422962133">(342) 296 21 33</a><span>Телефон рекламы</span></div>
+						</div>
+					</div>
+					<div class="footer-part">
+						<div class="footer-mobile-mail"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="12.255" height="9.077" viewBox="0 0 12.255 9.077">
+<path d="M224.068,275.012l-6.1-5.057h12.222Zm0,1.65-6.127-5.076v7.447h12.255V271.6Z" transform="translate(-217.94 -269.955)" fill="#cbcbcb"/>
+</svg>
+							<div><a href="mailto:gazetaniva@yandex.ru">gazetaniva@yandex.ru</a><span>Почта для связи</span></div>
+						</div>
+					</div>
+					<div class="footer-part">
+						<div class="footer-mobile-address"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="9.1" height="13" viewBox="0 0 9.1 13"><defs><style>.geo-gray{fill:#cbcbcb;}</style></defs><path class="geo-gray" d="M12.05,3A4.547,4.547,0,0,0,7.5,7.55c0,3.412,4.55,8.45,4.55,8.45s4.55-5.037,4.55-8.45A4.547,4.547,0,0,0,12.05,3Zm0,6.175A1.625,1.625,0,1,1,13.675,7.55,1.626,1.626,0,0,1,12.05,9.175Z" transform="translate(-7.5 -3)"/></svg>
+							<address>624992, Пермский край, город Пермь, ул. Революции 34, офис 733</address>
+						</div>
+					</div>
+					<div class="footer-part">
+						<div class="footer-mobile-soc">
+										<ul class="soc-list">
+											<li><a href="#" aria-label="ВКонтакте"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="21.891" height="14.125" viewBox="0 0 21.891 14.125"><path d="M1416.11,96.206c.4,0,.8.012,1.2,0a.967.967,0,0,1,.9.515q.442.687.848,1.388c.612,1.034,1.166,2.1,1.8,3.11a5.745,5.745,0,0,0,.789,1.039c.342.323.577.268.754-.179a6.155,6.155,0,0,0,.294-1.671c.059-.824.047-1.659.047-2.49a.745.745,0,0,0-.824-.886c-.141,0-.294.007-.448.006-.059,0-.141.027-.165-.042a.184.184,0,0,1,.071-.185,4.165,4.165,0,0,1,2.273-1.313,10.35,10.35,0,0,1,1.719-.052c.271-.008.542,0,.824,0a.825.825,0,0,1,.86.669,4.744,4.744,0,0,1,.153,1.521c0,1.147-.117,2.293-.023,3.44a3.554,3.554,0,0,0,.212,1,.521.521,0,0,0,.978.118,2.582,2.582,0,0,0,.318-.643,30.1,30.1,0,0,1,2.732-5.231.85.85,0,0,1,.754-.366,8.1,8.1,0,0,1,3.227.51,1.658,1.658,0,0,1,.177.088.416.416,0,0,1,.259.589,6,6,0,0,1-.683,1.531c-.659,1.189-1.472,2.273-2.214,3.4a6.148,6.148,0,0,0-.436.72.75.75,0,0,0,.224,1.178,10.867,10.867,0,0,1,1.531,1.487,12.308,12.308,0,0,1,1.378,1.785,1.511,1.511,0,0,1-.118,1.8,1.49,1.49,0,0,1-1.107.509c-.836.013-1.672,0-2.52,0a.824.824,0,0,1-.6-.235c-.235-.236-.471-.471-.695-.707a16.749,16.749,0,0,0-1.625-1.6c-.129-.1-.247-.187-.376-.278a1.117,1.117,0,0,0-1.343-.127,1.656,1.656,0,0,0-.836,1.413,3.993,3.993,0,0,1-.094.919.706.706,0,0,1-.765.611,7.381,7.381,0,0,1-2.6-.316,7.708,7.708,0,0,1-2.85-1.875,22.615,22.615,0,0,1-5.276-8.159c-.247-.646-.495-1.3-.742-1.941-.224-.6-.059-.942.542-1,.495-.042.989-.008,1.484-.008v-.046Z" transform="translate(-1413.989 -95.432)"/></svg></a></li>
+											<li><a href="#" aria-label="Одноклассники"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="8.974" height="15.125" viewBox="0 0 8.974 15.125"><path d="M1450.34,101.692v-.413c.035-.088.062-.177.1-.265a.917.917,0,0,1,.742-.557,1.038,1.038,0,0,1,.707.2c.15.095.292.208.442.3a4.818,4.818,0,0,0,3.259.624,4.29,4.29,0,0,0,2.058-.838,1.412,1.412,0,0,1,.494-.251.9.9,0,0,1,1.033.429,2.451,2.451,0,0,1,.141.353v.383a1.129,1.129,0,0,1-.344.5,5.14,5.14,0,0,1-2.579,1.247c-.247.046-.5.088-.768.131.035.039.053.062.071.082l1.537,1.55,1.139,1.158a.883.883,0,0,1,.256.905.959.959,0,0,1-1.634.451c-.671-.7-1.351-1.373-2.022-2.064-.1-.105-.159-.11-.265,0-.662.682-1.325,1.356-1.987,2.031a1.115,1.115,0,0,1-.442.3,1.037,1.037,0,0,1-1.245-.779.96.96,0,0,1,.282-.856c.875-.878,1.74-1.759,2.605-2.64a.227.227,0,0,0,.106-.14.255.255,0,0,0-.053-.018c-.115-.019-.23-.036-.344-.052a5.355,5.355,0,0,1-2.738-1.137,1.708,1.708,0,0,1-.548-.64Zm4.019-8.832h.936a.408.408,0,0,0,.053.015,3.86,3.86,0,0,1,3.206,4.613,3.807,3.807,0,1,1-4.884-4.47,4.266,4.266,0,0,1,.689-.155ZM1453,96.686a1.833,1.833,0,1,0,3.665.006,1.887,1.887,0,0,0-1.837-1.878A1.86,1.86,0,0,0,1453,96.693Z" transform="translate(-1450.34 -92.86)"/></svg></a></li>
+											<li><a href="#" aria-label="Ютуб"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="19.537" height="13.737" viewBox="0 0 19.537 13.737"><path d="M20.179,6.649a2.455,2.455,0,0,0-1.727-1.738C16.928,4.5,10.818,4.5,10.818,4.5s-6.109,0-7.633.411A2.455,2.455,0,0,0,1.458,6.649a25.752,25.752,0,0,0-.408,4.733,25.752,25.752,0,0,0,.408,4.733,2.418,2.418,0,0,0,1.727,1.711c1.524.411,7.633.411,7.633.411s6.109,0,7.633-.411a2.418,2.418,0,0,0,1.727-1.711,25.752,25.752,0,0,0,.408-4.733,25.752,25.752,0,0,0-.408-4.733ZM8.82,14.287V8.477l5.106,2.9-5.106,2.9Z" transform="translate(-1.05 -4.5)"/></svg></a></li>
+											<li><a href="#" aria-label="Инстаграм"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="14.928" height="15.125" viewBox="0 0 14.928 15.125"><path d="M1487.243,108.834h-4.5a2.868,2.868,0,0,1-2.854-2.2,3.045,3.045,0,0,1-.094-.75V96.666a2.891,2.891,0,0,1,2.481-2.929,3.02,3.02,0,0,1,.477-.027h9a2.886,2.886,0,0,1,2.886,2.271,3.183,3.183,0,0,1,.073.7q.016,4.585.01,9.169a2.917,2.917,0,0,1-2.5,2.955,3.29,3.29,0,0,1-.529.026C1490.2,108.835,1488.727,108.834,1487.243,108.834Zm-6-9.1v6.1a1.433,1.433,0,0,0,1.505,1.527h9a1.442,1.442,0,0,0,1.505-1.541V99.742H1491.1c.073.461.166.911.208,1.365a3.3,3.3,0,0,1-.166,1.382,3.944,3.944,0,0,1-.612,1.228,4.053,4.053,0,0,1-7.089-.957,4.112,4.112,0,0,1,.01-3.024h-2.211Zm8.625,1.536a2.674,2.674,0,1,0,0,.005Zm3.1-5.806h-2.512v2.541h2.512" transform="translate(-1479.789 -93.709)"/></svg></a></li>
+											<li><a href="#" aria-label="Твитер"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="17.267" height="15.125" viewBox="0 0 17.267 15.125"><path d="M1387.213,106.839a3.7,3.7,0,0,1-3.335-2.654,3.314,3.314,0,0,0,1.576-.067,3.861,3.861,0,0,1-2.828-3.8,3.518,3.518,0,0,0,1.63.472,4,4,0,0,1-1.112-5.081,9.989,9.989,0,0,0,7.338,3.982c-.022-.23-.054-.432-.065-.633a3.734,3.734,0,0,1,2.989-4.016,3.294,3.294,0,0,1,3.011,1.015.3.3,0,0,0,.334.1,6.989,6.989,0,0,0,1.867-.763c.054-.029.1-.056.183-.1a3.353,3.353,0,0,1-.594,1.17c-.27.324-.583.616-.863.908a6.654,6.654,0,0,0,1.91-.565.713.713,0,0,1-.086.157,7.41,7.41,0,0,1-1.532,1.687.294.294,0,0,0-.119.288c.119,4.111-2.137,8.633-6.216,10.4a9.7,9.7,0,0,1-4.532.755,9.533,9.533,0,0,1-4.6-1.54,2.2,2.2,0,0,1-.183-.126,6.906,6.906,0,0,0,5.223-1.586Z" transform="translate(-1381.99 -94.993)"/></svg></a></li>
+											<li><a href="#" aria-label="Ватсап"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="15.068" height="15.125" viewBox="0 0 15.068 15.125"><path d="M1364.113,102.591a7.55,7.55,0,0,1-11.249,6.57.991.991,0,0,0-.9-.092c-.616.216-1.243.415-1.859.617-.432.138-.551-.014-.4-.427.173-.519.324-1.049.519-1.557a1.285,1.285,0,0,0-.119-1.244A7.583,7.583,0,0,1,1356.744,95a7.456,7.456,0,0,1,7.37,7.587Zm-11.767-2a2.044,2.044,0,0,0,.13.808,8.5,8.5,0,0,0,6.278,5.31,2.1,2.1,0,0,0,1.988-.756.973.973,0,0,0-.313-1.637c-.173-.085-.346-.171-.508-.254-.929-.451-.951-.467-1.588.334a.756.756,0,0,1-1.08.239,5.9,5.9,0,0,1-2.561-2.269.606.606,0,0,1,.043-.851,1.156,1.156,0,0,0,.184-1.591c-.151-.275-.249-.583-.378-.864a.821.821,0,0,0-1.34-.3,2.386,2.386,0,0,0-.854,1.832Z" transform="translate(-1349.046 -95.003)"/></svg></a></li>
+											<li><a href="#" aria-label="Вайбер"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="14.236" height="15.125" viewBox="0 0 14.236 15.125"><path d="M1323.04,94a14.4,14.4,0,0,1,4.135.56,3.777,3.777,0,0,1,2.727,2.885,11.778,11.778,0,0,1-.036,5.787,3.613,3.613,0,0,1-2.664,2.723,14.559,14.559,0,0,1-4.75.544.822.822,0,0,0-.713.345q-.882,1.018-1.791,2.013a.439.439,0,0,1-.517.249.534.534,0,0,1-.151-.529c0-.663-.009-1.328,0-1.991a.587.587,0,0,0-.419-.655,4.1,4.1,0,0,1-2.7-3.5,13.015,13.015,0,0,1,.036-4.2c.374-2.346,1.613-3.543,4.063-3.994A12.238,12.238,0,0,1,1323.04,94Zm4.17,9.385a.6.6,0,0,0-.2-.467,6.461,6.461,0,0,0-1.586-1.075.69.69,0,0,0-.9.241.98.98,0,0,1-1.355.254,4.3,4.3,0,0,1-2.13-2.139.777.777,0,0,1,.25-1.149.713.713,0,0,0,.187-1.1,11.311,11.311,0,0,0-.731-1.026c-.508-.6-.748-.654-1.239-.344-.864.552-1.132,1.046-.873,1.724a10.586,10.586,0,0,0,6.763,6.416,1.666,1.666,0,0,0,1.809-1.334Zm-3.8-7.459c-.143.047-.428-.113-.428.167-.009.209.268.131.419.165.125.029.258.037.383.062a3.837,3.837,0,0,1,3.359,3.653c.018.1.036.193.053.287.036.11.062.249.2.223a.2.2,0,0,0,.125-.235,4.251,4.251,0,0,0-.027-.585,4.341,4.341,0,0,0-4.09-3.737Zm.232,1.131c-.08.005-.294-.081-.321.118s.187.188.33.216c.125.026.258.038.383.07a2.45,2.45,0,0,1,1.969,2.228c.027.174-.036.471.231.429.241-.037.169-.31.152-.495a2.876,2.876,0,0,0-2.745-2.565Z" transform="translate(-1316.009 -93.995)"/></svg></a></li>
+											<li><a href="#" aria-label="Телеграм"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="16.142" height="14.125" viewBox="0 0 16.142 14.125"><path d="M1298.265,95h.787c.081,0,.091.015.091.094-.01.347,0,.7,0,1.043-.111.5-.222,1-.323,1.5l-2.149,10.575a1.686,1.686,0,0,1-.2.58.638.638,0,0,1-.726.312,1.519,1.519,0,0,1-.6-.3c-1.13-.867-2.25-1.728-3.37-2.6a.21.21,0,0,0-.333.02c-.484.5-.968,1-1.473,1.489a1.648,1.648,0,0,1-.605.486c-.252.087-.3.036-.283-.23l.091-1.385c.05-.706.1-1.423.141-2.134a.368.368,0,0,1,.1-.226c.111-.1.212-.2.313-.3l3.148-2.965c.676-.633,1.342-1.264,2.018-1.9q.651-.613,1.3-1.231a.184.184,0,0,0,.091-.231.2.2,0,0,0-.252-.061,1.132,1.132,0,0,0-.394.2l-5.206,3.421-3.027,1.989a.33.33,0,0,1-.3.066q-1.786-.59-3.572-1.174a.865.865,0,0,1-.535-.421v-.219a1.587,1.587,0,0,1,.868-.622q4.873-1.962,9.766-3.925Z" transform="translate(-1283 -95)"/></svg></a></li>
+										</ul>
+						</div>
+					</div>
+					<div class="footer-part">
+						<div class="footer-mobile-description">
+							<p>Средство массовой информации сайт «НИВА» зарегистрировано Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций Эл № ФС77-75287 от 15 марта 2019 года. Адрес редакции: г.Пермь, ул. 2-я Красавинская, 84, тел 8(342)2962232. Учредитель МУП ПМР «Редакция газеты «НИВА» email: gazetaniva@yandex.ru Главный редактор Ю.А.Сидорова</p>
+						</div>
+					</div>
+					<div class="footer-part">
+						<div class="footer-description-link footer-description-link_mobile"><img src="assets/img/perm-logo.png" alt=""><a href="#">Сайт Пермского района</a></div>
+					</div>
+					<div class="footer-part"><span class="footer-mobile-copy">© 2011 — 2020 ООО «Газета Нива Пермь»</span></div>
+					<div class="footer-part"><a class="praweb praweb_mobile" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="29px">
+<path d="M62.295,14.730 C61.193,14.730 60.591,14.076 60.591,12.932 L60.591,9.214 C60.591,8.071 61.193,7.417 62.295,7.417 C63.396,7.417 63.999,8.071 63.999,9.214 L63.999,12.932 C63.999,14.076 63.396,14.730 62.295,14.730 ZM62.876,9.143 C62.876,8.633 62.652,8.438 62.295,8.438 C61.938,8.438 61.713,8.633 61.713,9.143 L61.713,13.003 C61.713,13.514 61.938,13.708 62.295,13.708 C62.652,13.708 62.876,13.514 62.876,13.003 L62.876,9.143 ZM59.013,21.143 C58.128,21.143 57.644,20.626 57.644,19.722 L57.644,16.785 C57.644,15.881 58.128,15.364 59.013,15.364 C59.898,15.364 60.381,15.881 60.381,16.785 L60.381,19.722 C60.381,20.626 59.898,21.143 59.013,21.143 ZM59.480,16.728 C59.480,16.325 59.299,16.171 59.013,16.171 C58.726,16.171 58.545,16.325 58.545,16.728 L58.545,19.779 C58.545,20.182 58.726,20.336 59.013,20.336 C59.299,20.336 59.480,20.182 59.480,19.779 L59.480,16.728 ZM58.745,7.499 L59.867,7.499 L59.867,14.648 L58.745,14.648 L58.745,7.499 ZM56.358,14.648 L54.583,14.648 L54.583,7.499 L56.358,7.499 C57.480,7.499 58.031,8.122 58.031,9.266 L58.031,12.881 C58.031,14.025 57.480,14.648 56.358,14.648 ZM56.909,9.214 C56.909,8.704 56.695,8.520 56.338,8.520 L55.705,8.520 L55.705,13.626 L56.338,13.626 C56.695,13.626 56.909,13.443 56.909,12.932 L56.909,9.214 ZM52.145,14.740 C51.043,14.740 50.472,14.086 50.472,12.942 L50.472,7.499 L51.594,7.499 L51.594,13.014 C51.594,13.524 51.818,13.708 52.175,13.708 C52.532,13.708 52.757,13.524 52.757,13.014 L52.757,7.499 L53.818,7.499 L53.818,12.942 C53.818,14.086 53.246,14.740 52.145,14.740 ZM50.728,20.336 C51.015,20.336 51.195,20.190 51.195,19.787 L51.195,15.429 L52.047,15.429 L52.047,19.730 C52.047,20.634 51.589,21.151 50.703,21.151 C49.818,21.151 49.359,20.634 49.359,19.730 L49.359,15.429 L50.261,15.429 L50.261,19.787 C50.261,20.190 50.441,20.336 50.728,20.336 ZM48.860,14.648 L47.738,14.648 L47.738,8.520 L46.564,8.520 L46.564,7.499 L50.033,7.499 L50.033,8.520 L48.860,8.520 L48.860,14.648 ZM44.575,14.730 C43.473,14.730 42.902,14.076 42.902,12.932 L42.902,12.493 L43.963,12.493 L43.963,13.003 C43.963,13.514 44.187,13.698 44.544,13.698 C44.902,13.698 45.126,13.514 45.126,13.003 C45.126,11.533 42.933,11.257 42.933,9.214 C42.933,8.071 43.494,7.417 44.585,7.417 C45.677,7.417 46.238,8.071 46.238,9.214 L46.238,9.439 L45.177,9.439 L45.177,9.143 C45.177,8.633 44.973,8.438 44.616,8.438 C44.259,8.438 44.055,8.633 44.055,9.143 C44.055,10.614 46.248,10.890 46.248,12.932 C46.248,14.076 45.677,14.730 44.575,14.730 ZM44.247,16.236 L42.689,16.236 L42.689,17.810 L43.927,17.810 L43.927,18.617 L42.689,18.617 L42.689,20.271 L44.247,20.271 L44.247,21.078 L41.788,21.078 L41.788,15.429 L44.247,15.429 L44.247,16.236 ZM39.502,21.078 L39.174,18.068 L38.846,21.078 L37.608,21.078 L36.969,15.429 L37.846,15.429 L38.330,19.884 L38.764,15.429 L39.633,15.429 L40.083,19.916 L40.551,15.429 L41.338,15.429 L40.698,21.078 L39.502,21.078 ZM39.117,14.648 L37.352,14.648 L37.352,7.499 L39.046,7.499 C40.209,7.499 40.709,8.040 40.709,9.143 L40.709,9.399 C40.709,10.134 40.484,10.604 39.984,10.839 C40.586,11.073 40.821,11.615 40.821,12.370 L40.821,12.952 C40.821,14.055 40.239,14.648 39.117,14.648 ZM39.586,9.256 C39.586,8.745 39.413,8.520 39.015,8.520 L38.474,8.520 L38.474,10.410 L38.913,10.410 C39.331,10.410 39.586,10.225 39.586,9.654 L39.586,9.256 ZM39.699,12.299 C39.699,11.635 39.484,11.430 38.974,11.430 L38.474,11.430 L38.474,13.626 L39.117,13.626 C39.495,13.626 39.699,13.453 39.699,12.922 L39.699,12.299 ZM35.813,20.053 L34.707,20.053 L34.551,21.078 L33.723,21.078 L34.642,15.429 L35.961,15.429 L36.879,21.078 L35.969,21.078 L35.813,20.053 ZM35.256,16.430 L34.822,19.286 L35.691,19.286 L35.256,16.430 ZM33.598,7.499 L36.659,7.499 L36.659,8.520 L34.720,8.520 L34.720,10.512 L36.261,10.512 L36.261,11.533 L34.720,11.533 L34.720,13.626 L36.659,13.626 L36.659,14.648 L33.598,14.648 L33.598,7.499 ZM32.470,20.384 L32.470,19.496 C32.470,18.972 32.290,18.778 31.880,18.778 L31.569,18.778 L31.569,21.078 L30.667,21.078 L30.667,15.429 L32.027,15.429 C32.962,15.429 33.364,15.857 33.364,16.728 L33.364,17.172 C33.364,17.753 33.175,18.133 32.773,18.318 C33.224,18.504 33.372,18.932 33.372,19.520 L33.372,20.392 C33.372,20.666 33.380,20.868 33.470,21.078 L32.552,21.078 C32.503,20.933 32.470,20.844 32.470,20.384 ZM32.462,16.817 C32.462,16.414 32.323,16.236 32.003,16.236 L31.569,16.236 L31.569,17.971 L31.921,17.971 C32.257,17.971 32.462,17.826 32.462,17.374 L32.462,16.817 ZM30.752,14.648 L30.344,10.839 L29.936,14.648 L28.396,14.648 L27.600,7.499 L28.691,7.499 L29.293,13.136 L29.834,7.499 L30.915,7.499 L31.477,13.177 L32.058,7.499 L33.037,7.499 L32.241,14.648 L30.752,14.648 ZM30.249,16.825 L30.249,17.559 C30.249,18.463 29.807,18.956 28.905,18.956 L28.479,18.956 L28.479,21.078 L27.577,21.078 L27.577,15.429 L28.905,15.429 C29.807,15.429 30.249,15.921 30.249,16.825 ZM28.479,18.148 L28.905,18.148 C29.192,18.148 29.348,18.020 29.348,17.616 L29.348,16.768 C29.348,16.365 29.192,16.236 28.905,16.236 L28.479,16.236 L28.479,18.148 ZM25.314,21.663 C25.314,21.769 25.286,21.830 25.189,21.885 C23.065,23.093 20.944,24.305 18.823,25.517 C16.814,26.664 14.805,27.811 12.798,28.959 C12.735,28.995 12.684,29.011 12.611,28.970 C11.275,28.218 9.938,27.469 8.599,26.721 C8.527,26.681 8.499,26.635 8.500,26.553 C8.503,25.106 8.503,23.659 8.505,22.212 C8.505,22.083 8.514,22.077 8.628,22.141 C9.953,22.893 11.278,23.645 12.601,24.400 C12.698,24.456 12.768,24.455 12.865,24.400 C14.859,23.267 16.856,22.138 18.851,21.007 C19.674,20.541 20.496,20.075 21.319,19.610 C21.385,19.574 21.412,19.532 21.410,19.457 C21.406,19.291 21.408,19.125 21.409,18.960 C21.425,15.870 21.421,12.781 21.425,9.692 C21.425,9.598 21.398,9.545 21.314,9.501 C20.402,9.022 19.516,8.497 18.619,7.991 C17.048,7.105 15.481,6.215 13.912,5.326 C13.550,5.121 13.187,4.918 12.828,4.710 C12.759,4.670 12.706,4.671 12.639,4.709 C10.761,5.770 8.882,6.829 7.002,7.888 C6.199,8.341 5.395,8.793 4.590,9.245 C4.321,9.397 4.317,9.397 4.322,9.707 C4.349,11.411 4.326,13.115 4.344,14.818 C4.362,16.447 4.344,18.077 4.364,19.705 C4.378,20.792 4.371,21.878 4.372,22.964 C4.372,23.386 4.364,23.809 4.360,24.231 C4.359,24.342 4.351,24.345 4.251,24.290 C2.906,23.547 1.562,22.803 0.215,22.063 C0.114,22.007 0.078,21.946 0.077,21.829 C0.058,20.359 0.073,18.889 0.056,17.419 C0.041,16.138 0.056,14.857 0.038,13.576 C0.019,12.217 0.035,10.858 0.017,9.498 C0.007,8.757 0.012,8.016 0.001,7.274 C-0.000,7.175 0.030,7.117 0.118,7.067 C1.326,6.391 2.531,5.711 3.737,5.032 C5.265,4.171 6.793,3.309 8.321,2.448 C9.756,1.639 11.192,0.832 12.626,0.022 C12.694,-0.016 12.746,-0.017 12.814,0.021 C14.599,1.035 16.385,2.048 18.171,3.060 C20.421,4.335 22.671,5.609 24.921,6.883 C25.026,6.942 25.129,7.004 25.235,7.061 C25.290,7.091 25.316,7.132 25.312,7.195 C25.309,7.230 25.311,7.266 25.311,7.302 C25.311,9.689 25.311,12.076 25.311,14.463 C25.311,16.863 25.311,19.263 25.314,21.663 ZM14.439,17.492 C14.439,17.492 14.523,18.697 13.932,19.550 C13.305,20.453 12.000,21.007 12.000,21.007 L11.162,19.290 C11.162,19.290 11.935,19.183 12.686,18.829 C13.623,18.388 14.439,17.492 14.439,17.492 ZM11.927,11.401 C13.968,9.968 16.635,9.827 16.991,9.814 L17.012,9.793 C17.012,9.793 17.012,9.800 17.012,9.814 C17.025,9.813 17.032,9.813 17.032,9.813 C17.032,9.813 17.025,9.825 17.012,9.848 C17.008,10.268 16.932,13.019 15.586,15.068 C14.389,16.892 11.654,18.272 11.654,18.272 L10.312,16.838 L10.315,16.835 L8.828,15.459 C8.828,15.459 10.131,12.663 11.927,11.401 ZM14.632,15.153 C16.172,13.342 16.531,11.061 16.531,11.061 C16.531,11.061 15.990,12.905 14.525,14.628 C13.140,16.257 11.091,16.978 11.091,16.978 C11.091,16.978 13.342,16.670 14.632,15.153 ZM9.549,12.405 C9.549,12.405 8.687,13.256 8.283,14.210 C7.959,14.976 7.883,15.753 7.883,15.753 L6.136,14.982 C6.136,14.982 6.638,13.655 7.515,12.992 C8.343,12.367 9.549,12.405 9.549,12.405 ZM47.500,16.728 L47.500,16.930 C47.500,17.511 47.320,17.882 46.918,18.068 C47.401,18.253 47.590,18.682 47.590,19.279 L47.590,19.739 C47.590,20.610 47.123,21.078 46.221,21.078 L44.803,21.078 L44.803,15.429 L46.164,15.429 C47.098,15.429 47.500,15.857 47.500,16.728 ZM45.705,20.271 L46.221,20.271 C46.525,20.271 46.688,20.134 46.688,19.714 L46.688,19.222 C46.688,18.697 46.516,18.536 46.106,18.536 L45.705,18.536 L45.705,20.271 ZM45.705,16.236 L45.705,17.729 L46.057,17.729 C46.393,17.729 46.598,17.584 46.598,17.132 L46.598,16.817 C46.598,16.414 46.459,16.236 46.139,16.236 L45.705,16.236 ZM54.711,18.810 L54.711,15.429 L55.514,15.429 L55.514,21.078 L54.588,21.078 L53.465,16.987 L53.465,21.078 L52.653,21.078 L52.653,15.429 L53.785,15.429 L54.711,18.810 ZM57.063,21.078 L56.161,21.078 L56.161,15.429 L57.063,15.429 L57.063,21.078 ZM63.012,18.810 L63.012,15.429 L63.815,15.429 L63.815,21.078 L62.889,21.078 L61.766,16.987 L61.766,21.078 L60.955,21.078 L60.955,15.429 L62.086,15.429 L63.012,18.810 Z"></path>
+</svg></a></div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -82,26 +82,9 @@ html(lang="ru")
                                     span.reader-text__description Студентка Пермского государственного научно-исследовательского университета 
                                     p Все самые близкие люди – родители, родственники, лучшие подруги – живут не в Перми, а в Пермском районе. Здесь спокойнее и уютнее, ближе к природе и земле. Пермский район также ассоциируется у меня с детством. С первого по одиннадцатый класс я училась в Кондратовской школе, участвовала во внеучебной деятельности вместе с детско-юношеским центром «Импульс», другими словами – жила очень активной и творческой жизнью. Благодаря тем возможностям, которые мне предоставила система образования района, я достигла успехов, которыми горжусь: поездка в международный детский центр «Артек», победа на региональном этапе Всероссийской олимпиады школьников по литературе, аттестат об окончании школы с отличием. Пермский район останется в моем сердце навсегда!
                     aside
-                        article.commercial
-                            // Для мобилок-планшетов этот блок будет по высоте таким же, как маленькая реклама, поэтому нужно будет подготовить другую картинку
-                            <picture>
-                                <source srcset="assets/img/commercial-small.jpg" media="(max-width: 992px)">
-                                <img src="assets/img/commercial.jpg" alt="">
-                            </picture>
-                            span.commercial__label Реклама
-                            span.commercial__mark Нива
-                            h3.commercial__headline Эффективная реклама в нашей газете
-                            a(href="#").button.button_rounded.button_block.commercial__button Подробнее
-                        article.commercial
-                            img(src="assets/img/commercial-small.jpg", alt="")
-                            span.commercial__label Реклама
-                            h3.commercial__headline Управляем вместе
-                            a(href="#").button.button_rounded.button_block.commercial__button Подробнее
-                        article.commercial
-                            img(src="assets/img/commercial-small.jpg", alt="")
-                            span.commercial__label Реклама
-                            h3.commercial__headline Управляем вместе
-                            a(href="#").button.button_rounded.button_block.commercial__button Подробнее
+                        +commercial-big
+                        +commercial
+                        +commercial
                 section
                     .block-headline
                         .block-headline__icon(role="presentation")
@@ -127,11 +110,12 @@ html(lang="ru")
                             +affiche-panels__item()
                             +affiche-panels__item()
                     ul.affiche-mobile
+                        +affiche-mobile__item('24', 'Июля', 'Владимир Путин назначил дату парада в честь юбилея Победы', 'active')
                         +affiche-mobile__item
                         +affiche-mobile__item
                         +affiche-mobile__item
                         +affiche-mobile__item
-                        +affiche-mobile__item
+                // Дима предложил на мобилке-планшете скрывать этот блок и заместо него использовать "квадратную рекламу", что выше
                 article.commercial-block
                     span.commercial__label Реклама
                     img(src="assets/img/commercial-block.jpg", alt="")

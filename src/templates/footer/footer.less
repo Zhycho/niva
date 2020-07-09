@@ -2,54 +2,6 @@
 
 footer {
     background-color: #343434;
-
-    .soc-list {
-
-        li {
-
-            a {
-
-                svg {
-                    fill: #FFF;
-                }
-
-                &:hover {
-
-                    svg {
-                        fill: @l-green;
-                    }
-                }
-            }
-        }
-    }
-
-    @media (max-width: 1200px) {
-        .soc-list {
-            max-width: 200px;
-            flex-wrap: wrap;
-
-            li {
-                width: calc(25% - 4px);
-
-                a {
-                    margin: 0 auto;
-                }
-            }
-        }
-    }
-
-    @media (max-width: 992px) {
-        .soc-list {
-            width: 100%;
-            justify-content: center;
-            margin-top: 24px;
-            max-width: none;
-
-            li {
-                width: auto;
-            }
-        }
-    }
 }
 
 .footer-part {
@@ -122,6 +74,7 @@ footer {
 
     svg {
         margin-right: 8px;
+        min-width: 12px;
     }
 
     a {
@@ -214,6 +167,10 @@ footer {
             text-decoration: none;
         }
     }
+
+    &.footer-description-link_mobile {
+        justify-content: center;
+    }
 }
 
 .footer-bottom {
@@ -262,4 +219,192 @@ footer {
             fill: @l-green;
         }
     }
+
+    &.praweb_mobile {
+        margin: 0 auto;
+    }
+}
+
+.footer-desk {
+
+    .soc-list {
+
+        li {
+
+            a {
+
+                svg {
+                    fill: #FFF;
+                }
+
+                &:hover {
+
+                    svg {
+                        fill: @l-green;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .soc-list {
+            max-width: 200px;
+            flex-wrap: wrap;
+
+            li {
+                width: calc(25% - 4px);
+
+                a {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+        .soc-list {
+            width: 100%;
+            justify-content: center;
+            margin-top: 24px;
+            max-width: none;
+
+            li {
+                width: auto;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.footer-mobile {
+    display: none;
+
+    .footer-part {
+        padding: 12px 0;
+    }
+
+    .soc-list {
+        justify-content: center;
+
+        li {
+
+            a {
+
+                svg {
+                    fill: #FFF;
+                }
+
+                &:hover {
+
+                    svg {
+                        fill: @l-green;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
+
+.footer-mobile-top {
+    display: flex;
+    justify-content: space-between;
+
+    .logo-wrapper {
+        padding: 0;
+    }
+}
+
+.footer-mobile-phone {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+
+        a {
+            color: #FFF;
+            display: inline-block;
+            font-size: 1.3125rem;
+            font-weight: 700;
+            padding-bottom: 4px;
+            .trans();
+
+            &:hover {
+                color: @l-green;
+            }
+        }
+
+        span {
+            color: #CBCBCB;
+            display: block;
+            font-size: 0.8125rem;
+            text-align: end;
+        }
+    }
+}
+
+.footer-mobile-mail {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+
+        a {
+            color: #FFF;
+            display: inline-block;
+            font-size: 1.0625rem;
+            font-weight: 700;
+            padding-bottom: 4px;
+            .trans();
+
+            &:hover {
+                color: @l-green;
+            }
+        }
+
+        span {
+            color: #CBCBCB;
+            display: block;
+            font-size: 0.6875rem;
+            text-align: end;
+        }
+    }
+}
+
+.footer-mobile-address {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    address {
+        color: #CBCBCB;
+        font-size: 0.6875rem;
+        font-style: normal;
+        line-height: 24px;
+        max-width: 230px;
+        text-align: end;
+    }
+}
+
+.footer-mobile-description {
+    color: #FFF;
+    font-size: 0.6875rem;
+    text-align: center;
+}
+
+.footer-mobile-copy {
+    color: #CBCBCB;
+    display: block;
+    font-size: 0.75rem;
+    padding: 12px 0;
+    text-align: center;
 }

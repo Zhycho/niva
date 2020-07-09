@@ -1,0 +1,44 @@
+include mixins/mixins.pug
+
+doctype html
+html(lang="ru")
+    head
+        include ./templates/head/head.pug
+    body
+        header
+            include ./templates/header/header.pug
+        main
+            include ./templates/header/post-header.pug
+            .container
+                +breadcrumb('Новости')
+                +page-headline('Архив газет')
+                .page-with-aside
+                    div
+                        +filter("filter_mobile")
+                        ul.archive-list
+                            +newspaper
+                            +newspaper
+                            +newspaper
+                            +newspaper
+                            +newspaper
+                            +newspaper
+                        a(href="").button.button_block.button_white.button_big.margin-bottom Показать ещё
+                        +articles-nav
+                    aside
+                        +filter
+                        +commercial-big
+                        +commercial
+                    #modal.modal
+                        form(action="").modal-container
+                            h3.modal-headline Купите газету
+                            img(src="assets/img/niva-logo-black.jpg", alt="").modal-logo
+                            label.input
+                                input(type="text", name="", placeholder="Имя")
+                            label.input
+                                input(type="email", name="", placeholder="Почта")
+                            label.input-check
+                                input(type="checkbox", name="")
+                                span Прочитал соглашение и согласен с политикой конфиденциальности
+                            input(type="submit", value="Купить").button.button_rounded.modal-button
+        footer
+            include ./templates/footer/footer.pug

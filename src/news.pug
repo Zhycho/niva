@@ -1,0 +1,36 @@
+include mixins/mixins.pug
+
+doctype html
+html(lang="ru")
+    head
+        include ./templates/head/head.pug
+    body
+        header
+            include ./templates/header/header.pug
+        main
+            include ./templates/header/post-header.pug
+            .container
+                +breadcrumb('Новости')
+                +page-headline('Новости')
+                .page-with-aside
+                    div
+                        +filter("filter_mobile")
+                        ul.page-news-list
+                            +article-card(src="assets/img/cap.jpg")
+                            +article-card(src="assets/img/news_02.png")
+                            +article-card(src="assets/img/news_03.png")
+                            +article-card(src="assets/img/news_04.png")
+                            +article-card(src="assets/img/news_02.png")
+                            +article-card(src="assets/img/news_03.png")
+                            +article-card(src="assets/img/news_02.png")
+                            +article-card(src="assets/img/news_04.png")
+                            +article-card(src="assets/img/news_02.png")
+                            +article-card(src="assets/img/news_04.png")
+                        a(href="").button.button_block.button_white.button_big.margin-bottom Показать ещё
+                        +articles-nav
+                    aside
+                        +filter
+                        +commercial-big
+                        +commercial
+        footer
+            include ./templates/footer/footer.pug

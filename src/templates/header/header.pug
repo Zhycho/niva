@@ -4,12 +4,31 @@ mixin header-nav__item(title='Пункт меню')
     li.header-nav__item
         a&attributes(attributes)= title
 
-.header-top
+mixin burger-menu__nav-item(title='Пункт меню')
+    li.burger-menu__nav-item
+        a&attributes(attributes)= title
+
+
+.header-top.js--header-top
+    .burger-menu.js--burger-menu
+        form(action="").burger-menu__search
+            button(type="submit").burger-menu__search-button
+                <svg xmlns="http://www.w3.org/2000/svg" width="19.155" height="19.16" viewBox="0 0 19.155 19.16"><path d="M23.43,22.266,18.1,16.889a7.592,7.592,0,1,0-1.152,1.167L22.243,23.4a.82.82,0,0,0,1.157.03A.825.825,0,0,0,23.43,22.266ZM12.137,18.121a5.995,5.995,0,1,1,4.24-1.756A5.958,5.958,0,0,1,12.137,18.121Z" transform="translate(-4.5 -4.493)" fill="#fff"/></svg>
+            input.burger-menu__search-field(type="text", name="", placeholder="Поиск...")
+        nav.burger-menu__nav
+            ul
+                +burger-menu__nav-item('Новости')(href='news.html')
+                +burger-menu__nav-item('Архив')(href='archive.html')
+                +burger-menu__nav-item('Статьи')(href='news.html')
+                +burger-menu__nav-item('Губерния')(href='typical.html')
+                +burger-menu__nav-item('Впн-2020')(href='news.html')
+                +burger-menu__nav-item('Рекламодателю')(href='contacts.html')
     .container
         .header-top-two-half
             div
-                button.burger(aria-label="Показать/скрыть мобильное меню")
+                button.burger.js--burger(aria-label="Показать/скрыть мобильное меню")
                     <svg xmlns="http://www.w3.org/2000/svg" width="23.489" height="15.66" viewBox="0 0 23.489 15.66"><path d="M3,21.66H26.489V19.05H3Zm0-6.525H26.489v-2.61H3ZM3,6V8.61H26.489V6Z" transform="translate(-3 -6)"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18.5" height="18.502" viewBox="0 0 18.5 18.502"><defs><style>.cross{fill:#fff;}</style></defs><g transform="translate(-329.294 -561.07)"><rect class="cross" width="3.198" height="22.966" transform="matrix(0.707, -0.707, 0.707, 0.707, 329.294, 563.331)"/><rect class="cross" width="3.198" height="22.966" transform="matrix(0.707, 0.707, -0.707, 0.707, 345.533, 561.07)"/></g></svg>
                 .logo-wrapper(role="banner")
                     a(href="index.html").logo
                         img(src="assets/img/logo-niva.png", alt="")

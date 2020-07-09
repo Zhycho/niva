@@ -138,7 +138,10 @@ mixin affiche-mobile__item(day='24', month='Июля', title='Владимир �
             span.affiche-tabs__text= title
         .affiche-panels__item
             .affiche-panels__img
-                img(src="assets/img/affiche.jpg", alt="")
+                <picture>
+                    <source srcset="assets/img/affiche-mobile.png" media="(max-width: 768px)">
+                    <img src="assets/img/affiche.jpg" alt="">
+                </picture>
             .affiche-panels__description
                 .article-card-info.article-card-info_black
                     time Вчера в 13:21
@@ -154,5 +157,86 @@ mixin affiche-mobile__item(day='24', month='Июля', title='Владимир �
                     <svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="9.1" height="13" viewBox="0 0 9.1 13"><defs><style>.geo-white{fill:#FFF;}</style></defs><path class="geo-white" d="M12.05,3A4.547,4.547,0,0,0,7.5,7.55c0,3.412,4.55,8.45,4.55,8.45s4.55-5.037,4.55-8.45A4.547,4.547,0,0,0,12.05,3Zm0,6.175A1.625,1.625,0,1,1,13.675,7.55,1.626,1.626,0,0,1,12.05,9.175Z" transform="translate(-7.5 -3)"/></svg>
                     | Гамово
 
+mixin breadcrumb(page="Текующая страница")
+    nav(aria-label="Хлебные крошки")
+        ol.breadcrumb
+            li.breadcrumb__item
+                a(href="index.html") Главная
+            li.breadcrumb__item.active(aria-current="page")= page
 
+mixin page-headline(headline="Страница")
+    h1.page-headline= headline
 
+mixin commercial-big
+    article.commercial
+        // Для мобилок-планшетов этот блок будет по высоте таким же, как маленькая реклама, поэтому нужно будет подготовить другую картинку
+        <picture>
+            <source srcset="assets/img/commercial-small.jpg" media="(max-width: 992px)">
+            <img src="assets/img/commercial.jpg" alt="">
+        </picture>
+        span.commercial__label Реклама
+        span.commercial__mark Нива
+        h3.commercial__headline Эффективная реклама в нашей газете
+        a(href="#").button.button_rounded.button_block.commercial__button Подробнее
+
+mixin commercial 
+    article.commercial
+        img(src="assets/img/commercial-small.jpg", alt="")
+        span.commercial__label Реклама
+        h3.commercial__headline Управляем вместе
+        a(href="#").button.button_rounded.button_block.commercial__button Подробнее
+
+mixin filter(something)
+    form(action="").filter(class="" + something)
+        h2.filter__headline Фильтр новостей
+        .filter-item
+            span.filter-item__title Дата публикации
+            .filter-two-col
+                div
+                    .select
+                        select(name="")
+                            option(value="Декабрь") Декабрь
+                            option(value="Январь") Январь
+                            option(value="Февраль") Февраль
+                            option(value="Сентябрь") Сентябрь
+                div
+                    .select
+                        select(name="")
+                            option(value="2020") 2020
+                            option(value="2021") 2021
+                            option(value="2022") 2022
+                            option(value="2023") 2023
+        .filter-two-col
+            div
+                button(type="reset").button.button_block.button_rounded.button_wide.button_empty Сбросить
+            div
+                                    button(type="submit").button.button_block.button_rounded.button_wide Найти
+
+mixin articles-nav
+    nav.articles-nav
+        button.articles-nav_button(aria-label="Следующая страница") &#60;
+        ul
+            li
+                a(href="").articles-nav_button 1
+            li
+                a(href="").articles-nav_button 2
+            li
+                a(href="").articles-nav_button.active 3
+            li
+                a(href="").articles-nav_button 4
+            li
+                a(href="").articles-nav_button 5
+        button.articles-nav_button(aria-label="Предыдущая страница") &#62;
+
+mixin newspaper 
+    li.newspaper
+        .newspaper__img
+            img(src="assets/img/newspaper.jpg", alt="")
+            time.affiche-tabs__date(datetime="2020-07-24")
+                span.affiche-tabs__day 24
+                span Июля
+                span 2020
+        .newspaper__description
+            button.button.button_block.button_rounded.button_wide.newspaper__button(data-fancybox data-src="#modal") Купить
+            span.newspaper__detail №25 (8570) от 18 июня 2020 года
+            span.newspaper__price Цена: 10 &#8381;
