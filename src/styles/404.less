@@ -1,0 +1,140 @@
+@import '_variables.less';
+
+.page-404 {
+    align-items: center;
+    background: url(../img/modal-decor.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    padding: 12vh 0 20vh;
+
+    & > div {
+        margin: 10px;
+        width: calc(50% - 20px);
+    }
+
+    @media (max-width: 1200px) {
+        padding: 40px 0;
+
+        & > div {
+
+            &:nth-of-type(1) {
+                width: 330px;
+            }
+
+            &:nth-of-type(2) {
+                width: calc(100% - 330px);
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        background: none;
+        display: block;
+        padding: 12px 0 40px;
+
+        & > div {
+
+            &:nth-of-type(1) {
+                margin: 0;
+                width: 100%;
+            }
+
+            &:nth-of-type(2) {
+                margin: 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.page-404__404 {
+    color: #4E4E4E;
+    display: block;
+    font-size: 9.25rem;
+    font-weight: 700;
+    text-align: end;
+
+    @media (max-width: 768px) {
+        font-size: 5rem;
+        text-align: center;
+    }
+}
+
+.page-404__oi {
+    color: @l-green;
+    display: block;
+    font-size: 7.875rem;
+    font-weight: 700;
+    line-height: 120px;
+
+    @media (max-width: 768px) {
+        text-align: center;
+        font-size: 3rem;
+        line-height: 44px;
+    }
+}
+
+.page-404__not-found {
+    color: #4E4E4E;
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+.page-404__description {
+    display: block;
+    font-size: 0.75rem;
+    margin-bottom: 16px;
+
+    @media (max-width: 768px) {
+        text-align: center;
+    }
+}
+
+.button.page-404__button {
+    margin-bottom: 96px;
+
+    @media (max-width: 768px) {
+        display: block;
+        margin: 0 auto 40px;
+        width: fit-content;
+    }
+}
+
+.page-404__soc {
+
+    span {
+        display: block;
+        font-size: 0.75rem;
+        margin-bottom: 4px;
+    }
+
+    .soc-list li a {
+
+        svg {
+            fill: #4E4E4E;
+        }
+
+        &:hover {
+
+            svg {
+                fill: @l-green;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        text-align: center;
+
+        .soc-list {
+            justify-content: center;
+        }
+    }
+}

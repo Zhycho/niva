@@ -17,6 +17,56 @@ $(document).ready(function() {
         nextArrow: $('.js--main-slider__next'),
     });
 
+    // Слайдер в продукте
+    $('.js--article-slider__projector').slick({
+        infinite: false,
+        slidesToShow: 1,
+        dots: false,
+        slidesToScroll: 1,
+        arrows: false,
+        swipe: false,
+        speed: 700,
+        fade: true,
+        asNavFor: '.js--article-slider__nav',
+        responsive: [
+            {
+                breakpoint: 481,
+                settings: "unslick"
+            },
+        ]
+    });
+    $('.js--article-slider__nav').slick({
+        infinite: false,
+        slidesToShow: 4,
+        dots: false,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: $('.js--article-slider__prev'),
+        nextArrow: $('.js--article-slider__next'),
+        focusOnSelect: true,
+        asNavFor: '.js--article-slider__projector',
+        responsive: [
+            {
+                breakpoint: 1201,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 481,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+        ]
+    });
+
     // Табы в афише
     $('.js--affiche-tabs__item').click( function() {
         $(this).siblings().removeClass('active');

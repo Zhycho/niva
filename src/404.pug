@@ -1,0 +1,27 @@
+include mixins/mixins.pug
+
+doctype html
+html(lang="ru")
+    head
+        include ./templates/head/head.pug
+    body
+        header
+            include ./templates/header/header.pug
+        main
+            include ./templates/header/post-header.pug
+            .container
+                +breadcrumb('404')
+                +page-headline('Страница не найдена')
+                .page-404
+                    div
+                        span.page-404__404 404
+                    div
+                        span.page-404__oi Ой!
+                        span.page-404__not-found Мы не нашли страницу!
+                        span.page-404__description К сожалению, такой страницы нет на сайте. Попробуйте начать с главной
+                        a(href="index.html").button.button_rounded.page-404__button На главную
+                        .page-404__soc
+                            span Подпишись на нас в социальных сетях
+                            +soc-list
+        footer
+            include ./templates/footer/footer.pug

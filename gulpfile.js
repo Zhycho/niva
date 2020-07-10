@@ -63,7 +63,7 @@ gulp.task('style:build', function() {
         .pipe(less())
         .pipe(concat('mainstyle.css'))
         .pipe(prefixer())
-        // .pipe(cssmin())
+        .pipe(cssmin())
         .pipe(gulp.dest(path.build.css))
         .pipe(reload({stream: true}));
 });
@@ -88,12 +88,12 @@ gulp.task('style:build', function() {
 
 gulp.task('image:build', function() {
     return gulp.src(path.src.img)
-        // .pipe(imagemin({
-        //     progressive: true,
-        //     svgoPlugins: [{removeViewBox: false}],
-        //     use: [pngquant()],
-        //     interlaced: true
-        // }))
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()],
+            interlaced: true
+        }))
         .pipe(gulp.dest(path.build.img))
         .pipe(reload({stream: true}));
 });

@@ -15,9 +15,9 @@ html(lang="ru")
                         li.article-card-main
                             .article-card-main__top
                                 .article-card-tags.article-card-tags_main
-                                    span.article-card-tags__alt Нива 
+                                    span.article-card-tags__watermark Нива 
                                     | | 
-                                    span.article-card-tags__title news
+                                    span.article-card-tags__watermark-detail news
                                 span.article-card-main__mark Главная новость недели
                             img(src="assets/img/article-main.png")
                             .article-card-main__text
@@ -54,15 +54,7 @@ html(lang="ru")
                                         +main-slider__item
                                     div
                                         +main-slider__item
-                                .main-slider-nav
-                                    button.main-slider-nav__prev.js--main-slider__prev(aria-label="Предыдущий слайдер")
-                                        <svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="12.125" height="10.538" viewBox="0 0 12.125 10.538">
-                                            <path d="M5.268,0,.875,4.4,0,5.272l.875.875,4.393,4.391.875-.874L2.37,5.891h9.755V4.653H2.37L6.144.877Z" fill="#fff"/>
-                                        </svg>
-                                    button.main-slider-nav__next.js--main-slider__next(aria-label="Следующий слайдер")
-                                        <svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="12.125" height="10.538" viewBox="0 0 12.125 10.538">
-                                            <path d="M5.268,10.538.875,6.142,0,5.266l.875-.875L5.268,0l.875.874L2.37,4.647h9.755V5.885H2.37L6.144,9.661Z" transform="translate(12.125 10.538) rotate(180)" fill="#fff"/>
-                                        </svg>
+                                +slider-nav("main-slider-nav", "js--main-slider__prev", "js--main-slider__next")
                         section
                             .block-headline
                                 .block-headline__icon(role="presentation")
@@ -74,9 +66,9 @@ html(lang="ru")
                                 .reader-img
                                     img(src="assets/img/reader.jpg", alt="")
                                     .article-card-tags
-                                        span.article-card-tags__alt Нива 
+                                        span.article-card-tags__watermark Нива 
                                         | | 
-                                        span.article-card-tags__title читатель
+                                        span.article-card-tags__watermark-detail читатель
                                 .reader-text
                                     h3.reader-text__headline Маргарита Тихонова, д. Кондратово
                                     span.reader-text__description Студентка Пермского государственного научно-исследовательского университета 
